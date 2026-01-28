@@ -9,7 +9,6 @@
 {comment: Suggested transpose: G}
 
 {start_of_verse}
-{verse}
 {comment:  1}
 #Modificado con originales en comentarios: 
 #                       ---------->[Eb]
@@ -35,7 +34,6 @@ Mi coraz[Bb]ón ent[Eb]ona la canci[Bb]ón,  [Gm]
 {end_of_chorus}
 
 {start_of_verse}
-{verse}
 {comment:  2}
 #                     --------->[Eb]
 Al recorr[Bb]er los m[Bb7]ontes y los v[Eb]alles
@@ -48,7 +46,6 @@ Y el murmur[Bb]ar del cl[F]aro m[F7]ananti[Bb]al,    [F7]
 {end_of_verse}
 
 {start_of_verse}
-{verse}
 {comment:  3}
 #                     -------->[Eb]
 Cuando recu[Bb]erdo d[Bb7]el amor div[Eb]ino
@@ -61,7 +58,6 @@ Y en una cr[Bb]uz sufri[F]ó por m[F7]í y muri[Bb]ó,  [F7]
 {end_of_verse}
 
 {start_of_verse}
-{verse}
 {comment:  4}
 #                         -------->[Eb]
 Cuando el Señ[Bb]or me ll[Bb7]ame a su pres[Eb]encia,
