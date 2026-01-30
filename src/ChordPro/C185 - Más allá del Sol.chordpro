@@ -1,0 +1,53 @@
+{title: C185 - Más allá del sol}
+{author: Tradicional}
+#{ccli: ?}
+{key: G}
+{tempo: 95}
+{time: 4/4}
+{duration: 3:20}
+# sample: https://youtu.be/wCJrm1oDh4w
+{c:Himno 500 en Himnario Adventista}
+{c:Himno 564 en Himnario de Gloria}
+{comment: Transposición sugerida: C}
+
+{c:Verse 1}
+{start_of_verse:-}
+[G]Aunque en esta v[C]id[G]a no tengo riqu[C]ez[G]as
+sé que allá en la gl[D7]oria[(C)]        tengo una mansi[G]ón [(D)] [G]
+cual alma perd[C]id[G]a entre la pobr[C]ez[G]a,
+#-que mi-
+de mi Jesucr[D7]isto[(C)]        tuvo compasi[G]ón.     [G7]
+{end_of_verse}
+
+{c:Chorus}
+{start_of_chorus:-}
+Más allá del s[C]ol, [D]    más allá del s[G]ol    [(Em)]
+yo t[(Am)]engo un hog[D]ar, ho[(D7)]gar, bello hog[(G)]ar,
+más all[(D7)]á del s[G]ol. [G7]
+
+Más allá del s[C]ol, [D]    más allá del s[G]ol    [(Em)]
+yo t[(Am)]engo un hog[D]ar, ho[(D7)]gar, bello hog[(G)]ar,
+más all[(D7)]á del s[G]ol. [(D)] [G]
+{end_of_chorus}
+
+{c:Verse 2}
+{start_of_verse:-}
+[G]Así por el m[C]und[G]o yo voy camin[C]and[G]o
+de pruebas rod[D7]eado [(C)]      y de tentaci[G]ón. [(D)] [G]
+Pero a mi l[C]ad[G]o viene consol[C]and[G]o
+mi bendito Cr[D7]isto [(C)]     en la turbaci[G]ón.      [G7]
+{end_of_verse}
+
+{c:Verse 3}
+{start_of_verse:-}
+[G]Cristo a cada r[C]az[G]a del linaje hum[C]an[G]o
+puede impart[D7]irle [(C)]       plena salvaci[C]ón, [(D)] [G]
+y una bella c[C]as[G]a hecha por su m[C]an[G]o
+fue "a" prepar[D7]arles [C]    a la santa Si[G]ón.    [G7]
+{end_of_verse}
+
+{start_of_bridge}
+{c:Final}
+yo t[(C)]engo un hog[D]ar, hog[(D7)]ar, bello hog[(G)]ar,
+más all[(D7)]á del s[G]ol.
+{end_of_bridge}

@@ -4,12 +4,12 @@
 {key: Bb}
 {tempo: 68}
 {time: 4/4}
-{duration:4:30}
+{duration: 4:30}
 # sample:https://youtu.be/G6P1VnEPvjg
-{comment: Suggested transpose: G}
+{footer: Transposición sugerida: G}
 
-{start_of_verse}
-{comment:  1}
+{c:Verse 1}
+{start_of_verse:-}
 #Modificado con originales en comentarios: 
 #                       ---------->[Eb]
 Señor, mi Di[Bb]os, al c[Bb7]ontemplar los ci[Eb]elos,
@@ -21,7 +21,8 @@ Al oír tu v[Bb]oz en l[Bb7]os potentes tru[Eb]enos   [(Ebm)]
 Y ver brill[Bb]ar el s[F]ol en s[F7]u cen[Bb]it,    [F7]
 {end_of_verse}
 
-{start_of_chorus}
+{c:Chorus}
+{start_of_chorus:-}
 #[Bb]     X
 Mi corazó[Bb]n ent[Eb]ona la canci[Bb]ón,
 #  [Bb]
@@ -33,8 +34,8 @@ Mi coraz[Bb]ón ent[Eb]ona la canci[Bb]ón,  [Gm]
 ¡Cuán grande es [Cm7]Él! ¡Cuán gr[F7]ande es [Bb]Él!    [(F7)]
 {end_of_chorus}
 
-{start_of_verse}
-{comment:  2}
+{c:Verse 2}
+{start_of_verse:-}
 #                     --------->[Eb]
 Al recorr[Bb]er los m[Bb7]ontes y los v[Eb]alles
 #                      -------->                   X
@@ -45,8 +46,9 @@ Al escuch[Bb]ar el c[Bb7]anto de las av[Eb]es   [(Ebm)]
 Y el murmur[Bb]ar del cl[F]aro m[F7]ananti[Bb]al,    [F7]
 {end_of_verse}
 
-{start_of_verse}
-{comment:  3}
+
+{c:Verse 3}
+{start_of_verse:-}
 #                     -------->[Eb]
 Cuando recu[Bb]erdo d[Bb7]el amor div[Eb]ino
 #                           ---------->               X
@@ -57,8 +59,8 @@ Aquel Jes[Bb]ús que p[Bb7]or salvarme v[Eb]ino   [(Ebm)]
 Y en una cr[Bb]uz sufri[F]ó por m[F7]í y muri[Bb]ó,  [F7]
 {end_of_verse}
 
-{start_of_verse}
-{comment:  4}
+{c:Verse 4}
+{start_of_verse:-}
 #                         -------->[Eb]
 Cuando el Señ[Bb]or me ll[Bb7]ame a su pres[Eb]encia,
 #                        --------->                   X

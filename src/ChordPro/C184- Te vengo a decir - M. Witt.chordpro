@@ -1,0 +1,48 @@
+{title: C184- Te vengo a decir - M. Witt}
+{author: Juan M. Isais}
+#{ccli: }
+{key: A}
+{tempo: 68}
+{time: 4/4}
+{duration: 3:25}
+# sample:https://youtu.be/43b0IsImnHw
+{comment: Transposición sugerida: D}
+
+{c:Verse 1}
+{start_of_verse:-}
+//Te vengo a dec[A]ir//, oh mi Salvad[E]or,
+//que yo te amo a ti// con el coraz[A]ón.
+
+Te vengo a dec[A]ir, te vengo a dec[A7]ir 
+toda la verd[D]ad:    [Dm]
+yo te amo, Señ[A]or, te adoro, Señ[E]or,
+con el coraz[A]ón.
+{end_of_verse}
+
+{c:Chorus}
+{start_of_chorus:-}
+//Yo quiero cant[E]ar// de gozo y de p[A]az.
+//Yo quiero llor[E]ar// de felicid[A]ad.
+
+Te vengo a dec[A]ir, te vengo a dec[A7]ir 
+toda la verd[D]ad:    [Dm]
+yo te amo, Señ[A]or, te adoro, Señ[E]or,
+con el coraz[A]ón.
+{end_of_chorus}
+
+{c:Verse 2}
+{start_of_verse:-}
+//Te quiero segu[A]ir//, oh mi Salvad[E]or,
+//y darte mi ser//, mi amigo, mi Di[A]os.
+
+Te quiero serv[A]ir, te quiero serv[A7]ir 
+mi rey mi Señ[D]or:    [Dm]
+te vengo a pon[A]er, todo lo que s[E]oy,
+recibelo Di[A]os.
+{end_of_verse}
+
+{start_of_bridge}
+{comment: Final}
+[D7]      que te amo, Señ[A]or, te adoro, Señ[E]or, [E7]
+con el coraz[A]ón.
+{end_of_bridge}
