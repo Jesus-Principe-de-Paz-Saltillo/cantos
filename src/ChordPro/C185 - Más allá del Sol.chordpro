@@ -6,9 +6,9 @@
 {time: 4/4}
 {duration: 3:20}
 # sample: https://youtu.be/wCJrm1oDh4w
-{c:Himno 500 en Himnario Adventista}
-{c:Himno 564 en Himnario de Gloria}
-{comment: Transposición sugerida: C}
+{footer:Himno 500 en Himnario Adventista}
+{footer:Himno 564 en Himnario de Gloria}
+{footer: Transposición sugerida: D}
 
 {c:Verse 1}
 {start_of_verse:-}
