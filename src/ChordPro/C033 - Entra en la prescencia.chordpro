@@ -1,29 +1,31 @@
 {title: C033 - Entra en la presencia}
 {author: Juan Carlos Alvarado}
 {ccli: 18512}
-{key: Bb}
+{key: A}
 {tempo: 76}
 {time: 4/4}
 {duration:2:30}
 # sample:https://youtu.be/t-S_U0inofg
-{footer: Transposición sugerida: A}
+{footer: Tono Original: Bb}
 # Tansponer -> A ó C
 
 {start_of_bridge}
-[Bb]  [Gm]   [Cm]   [F]
+[A]  [C#m]   [Bm]   [E]
 {end_of_bridge}
 
+//
 {start_of_verse}
-[Bb]Entra en la presencia del Señ[Gm]or con gratitud
-y adóral[Cm]e de coraz[F]ón.
-[Bb]Entra en la presencia del Señ[Gm]or con gratitud
-y alza tu v[Cm]oz con júbil[F]o.
+[A]Entra en la presencia del Señ[C#m]or con gratitud
+y adóral[D]e [Bm] de coraz[E]ón.
+[A]Entra en la presencia del Señ[C#m]or con gratitud
+y alza tu v[D]oz [Bm] con júbil[E]o.
 {end_of_verse}
 
 {start_of_chorus}
-Dad gl[Eb]oria, y h[F]onra y alab[Gm]anzas al Señ[F]or;
-[Eb]oh-[F]oh Cr[Bb]isto tu n[Cm7]ombre es s[F]in igu[Bb]al.
+Dad gl[D]oria, y h[C#m]onra y alab[Bm]anzas al Señ[E]or;
+[D]oh-[E]oh Cr[A]isto, nombre perf[E]ecto, 
+tu n[D]ombre es s[E]in igu[A]al.
 {end_of_chorus}
+//
 
-
-//Tu n[Cm7]ombre es s[F]in igu[Bb]al.//
+//Tu n[D]ombre es s[E]in igu[A]al.//
