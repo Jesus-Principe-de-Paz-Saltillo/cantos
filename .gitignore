@@ -89,3 +89,6 @@ Thumbs.db
 *.csv
 /.vscode/settings.json
 /Screenshots/
+
+/src/ChordPro/*.html
+/src/ChordPro/*.txt
