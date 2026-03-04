@@ -1,72 +1,72 @@
 {title: H020 - ¡Cuán grande es Él!}
 {author: Stuart K. Hine}
 {ccli: 14181}
-{key: Bb}
+{key: G}
 {tempo: 68}
 {time: 4/4}
 {duration: 4:30}
 # sample:https://youtu.be/G6P1VnEPvjg
-{footer: Transposición sugerida: G}
+{footer: Original: Bb}
 
 {c:Verse 1}
 {start_of_verse:-}
-#Modificado con originales en comentarios: 
+#modificaciónes del original en comentarios: 
 #                       ---------->[Eb]
-Señor, mi Di[Bb]os, al c[Bb7]ontemplar los ci[Eb]elos,
+Señor, mi Di[G]os, al c[G7]ontemplar los ci[C]elos,
 #                     --------->                   X
-El firmam[Bb]ento y l[F7]as estrellas m[Bb]il,    [F7]
+El firmam[G]ento y l[D7]as estrellas m[G]il,    [D7]
 #                      --------->[Eb]                  X
-Al oír tu v[Bb]oz en l[Bb7]os potentes tru[Eb]enos   [(Ebm)]
+Al oír tu v[G]oz en l[G7]os potentes tru[C]enos   [(Cm)]
 #                      X                             X
-Y ver brill[Bb]ar el s[F]ol en s[F7]u cen[Bb]it,    [F7]
+Y ver brill[G]ar el s[D]ol en s[D7]u cen[G]it,    [D7]
 {end_of_verse}
 
 {c:Chorus}
 {start_of_chorus:-}
 #[Bb]     X
-Mi corazó[Bb]n ent[Eb]ona la canci[Bb]ón,
+Mi corazó[G]n ent[C]ona la canci[G]ón,
 #  [Bb]
-¡Cuán grande es [F7]Él!
-¡Cuán grande es [Bb]Él!,    [(F7)]
+¡Cuán grande es [D7]Él!
+¡Cuán grande es [G]Él!,    [(D7)]
 #                                           X
-Mi coraz[Bb]ón ent[Eb]ona la canci[Bb]ón,  [Gm]
+Mi coraz[G]ón ent[C]ona la canci[G]ón,  [Em]
 #                                                         X
-¡Cuán grande es [Cm7]Él! ¡Cuán gr[F7]ande es [Bb]Él!    [(F7)]
+¡Cuán grande es [Am7]Él! ¡Cuán gr[D7]ande es [G]Él!    [(D7)]
 {end_of_chorus}
 
 {c:Verse 2}
 {start_of_verse:-}
 #                     --------->[Eb]
-Al recorr[Bb]er los m[Bb7]ontes y los v[Eb]alles
+Al recorr[G]er los m[G7]ontes y los v[C]alles
 #                      -------->                   X
-Y ver las b[Bb]ellas fl[F7]ores al pas[Bb]ar,    [F7]
+Y ver las b[G]ellas fl[D7]ores al pas[G]ar,    [D7]
 #                    -------->[Eb]                 X
-Al escuch[Bb]ar el c[Bb7]anto de las av[Eb]es   [(Ebm)]
+Al escuch[G]ar el c[G7]anto de las av[C]es   [(Cm)]
 #                      X                             X
-Y el murmur[Bb]ar del cl[F]aro m[F7]ananti[Bb]al,    [F7]
+Y el murmur[G]ar del cl[D]aro m[D7]ananti[G]al,    [D7]
 {end_of_verse}
 
 
 {c:Verse 3}
 {start_of_verse:-}
 #                     -------->[Eb]
-Cuando recu[Bb]erdo d[Bb7]el amor div[Eb]ino
+Cuando recu[G]erdo d[G7]el amor div[C]ino
 #                           ---------->               X
-Que desde el ci[Bb]elo al S[F7]alvador envi[Bb]ó,    [F7]
+Que desde el ci[G]elo al S[D7]alvador envi[G]ó,    [D7]
 #                    ----------->[Eb]             X
-Aquel Jes[Bb]ús que p[Bb7]or salvarme v[Eb]ino   [(Ebm)]
+Aquel Jes[G]ús que p[G7]or salvarme v[C]ino   [(Cm)]
 #                       X                             X
-Y en una cr[Bb]uz sufri[F]ó por m[F7]í y muri[Bb]ó,  [F7]
+Y en una cr[G]uz sufri[D]ó por m[D7]í y muri[G]ó,  [D7]
 {end_of_verse}
 
 {c:Verse 4}
 {start_of_verse:-}
 #                         -------->[Eb]
-Cuando el Señ[Bb]or me ll[Bb7]ame a su pres[Eb]encia,
+Cuando el Señ[G]or me ll[G7]ame a su pres[C]encia,
 #                        --------->                   X
-Al dulce hog[Bb]ar al ci[F7]elo de esplend[Bb]or;    [F7]
+Al dulce hog[G]ar al ci[D7]elo de esplend[G]or;    [D7]
 #                   -------->[Eb]               X
-Le adorar[Bb]é cant[Bb7]ando la grand[Eb]eza   [(Ebm)]
+Le adorar[G]é cant[G7]ando la grand[C]eza   [(Cm)]
 #                   X                            X
-De su pod[Bb]er y s[F]u infin[F7]ito am[Bb]or.  [F7]
+De su pod[G]er y s[D]u infin[D7]ito am[G]or.  [D7]
 {end_of_verse}
