@@ -1,0 +1,367 @@
+// =============================================================
+// ChordPro — Archivo de configuración personalizado (JPP) — GUITARRA
+//
+// Basado en el starter config oficial de ChordPro + documentación completa.
+// Todos los parámetros están presentes con sus valores por defecto.
+// Los que NO se han tocado están comentados con "# ".
+// Los que SÍ están activos son las personalizaciones JPP.
+//
+// Paleta de colores JPP (base: #134f5c teal oscuro):
+//   Título      : #0d3540  (teal muy oscuro)
+//   Acordes     : #497882  (teal suave)
+//   Subtítulo   : #444444  (gris oscuro)
+//   Footer      : #999999  (gris claro)
+//   Texto       : #666666  (gris medio)
+//
+// Documentación oficial:
+//   PDF:      https://www.chordpro.org/chordpro/chordpro-configuration-pdf/
+//   General:  https://www.chordpro.org/chordpro/chordpro-configuration-generic/
+//   Fuentes:  https://www.chordpro.org/chordpro/chordpro-fonts/
+//   Colores:  https://www.chordpro.org/chordpro/chordpro-colours/
+// =============================================================
+
+// =============================================================
+// AJUSTES RÁPIDOS — modifica aquí sin buscar en el resto del archivo
+// =============================================================
+
+// Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
+// para escalar uniformemente
+pdf.fonts.title.description    : "serif bold 14"
+pdf.fonts.subtitle.description : "serif 12"
+pdf.fonts.text.description     : "serif 12"
+pdf.fonts.chord.description    : "sans italic 10"
+pdf.fonts.footer.description   : "serif 10"
+pdf.fonts.toc.description      : "serif 11"
+pdf.fonts.comment.description  : "sans 12"
+
+// Colores
+pdf.fonts.title.color    : "#0d3540"
+pdf.fonts.subtitle.color : "#444444"
+pdf.fonts.text.color     : "#666666"
+pdf.fonts.chord.color    : "#497882"
+pdf.fonts.footer.color   : "#999999"
+pdf.fonts.toc.color      : "#666666"
+
+// =============================================================
+
+/**************** Para la GUI ****************/
+
+config.type        : config
+config.title       : "JPP Guitar"
+config.description : "Configuración personalizada JPP para guitarra."
+
+/**************** General settings ****************/
+
+settings.strict : true
+
+# settings.titles : center
+# settings.columns : 1
+# settings.suppress-empty-chords : true
+# settings.suppress-empty-lyrics : true
+# settings.lyrics-only : false
+# settings.inline-chords : false
+# settings.inline-annotations : %s
+# settings.chords-under : false
+# settings.transpose : 0
+# settings.enharmonic-transpose : true
+# settings.transcode : ""
+# settings.decapo : false
+# settings.chordnames : strict
+# settings.notenames : false
+# settings.chords-canonical : false
+# settings.choruslabels : true
+# settings.truesf : false
+# settings.maj7delta : false
+# settings.wrapindent : x
+# settings.flowtext : false
+
+/**************** Metadata ****************/
+
+metadata.keys : [ append author ccli footer key tempo time duration ]
+
+# metadata.strict : true
+# metadata.separator : "; "
+# metadata.autosplit : true
+
+/**************** Date formats ****************/
+
+# dates.today.format : "%A, %B %e, %Y"
+
+/**************** User info ****************/
+
+# user.name : ""
+# user.fullname : ""
+
+/**************** Instrument ****************/
+
+// Tipo de instrumento. Afecta los diagramas generados.
+// Opciones: "guitar", "ukulele", "keyboard"
+instrument.type : "guitar"
+
+/**************** User defined chords ****************/
+
+# chords: [ { name: Bes, frets: [ 1 1 3 3 3 1 ], fingers: [ 1 1 2 3 4 1 ] } ]
+
+// *** PERSONALIZADO JPP: acordes no reconocidos por ChordPro ***
+// frets: posiciones en el diagrama (0=cuerda al aire, -1=cuerda silenciada)
+// fingers: digitación opcional (0-9)
+// base: traste base (default 1)
+// Para más info: https://www.chordpro.org/chordpro/chordpro-configuration-generic/#user-defined-chords-string-instruments
+chords: [
+  {
+    // Am con nota añadida de 4ta — notas: A C D E
+    // Cuerdas:  6    5    4    3    2    1
+    //           Mi   La   Re   Sol  Si   Mi
+    name    : "Am(add4)"
+    base    : 1
+    frets   : [  0   0    0    2    1    0 ]
+    fingers : [  0   0    0    2    1    0 ]
+  }
+  { name : "Amadd4"  copy : "Am(add4)" }   // forma correcta
+  { name : "AmAdd4"  copy : "Am(add4)" }   // variante mayúsculas
+  { name : "*"  display : "*"  frets : [] fingers : [] }   // anotación — evita warning de [*]
+  {
+    // Am7 — override del built-in. Notas: A C E G
+    // Cuerdas:  6    5    4    3    2    1
+    //           Mi   La   Re   Sol  Si   Mi
+    name    : "Am7"
+    base    : 1
+    frets   : [ -1   0    2    0    1    0 ]
+    fingers : [  0   0    2    0    1    0 ]
+  }
+  {
+    // Dsus2 — notas: D E A
+    // Cuerdas:  6    5    4    3    2    1
+    //           Mi   La   Re   Sol  Si   Mi
+    name    : "Dsus2"
+    base    : 1
+    frets   : [ -1  -1   0    2    3    0 ]
+    fingers : [  0   0   0    1    3    0 ]
+  }
+  {
+    // D7sus4: D suspendido con 7ma — notas: D G A C
+    // Cuerdas:  6    5    4    3    2    1
+    name    : "D7sus4"
+    base    : 1
+    frets   : [ -1  -1   0    2    1    3 ]
+    fingers : [  0   0   0    2    1    3 ]
+  }
+]
+
+/**************** Chord name formats ****************/
+
+# chord-formats.common : "%{root|%{}%{qual|%{}}%{ext|%{}}%{bass|/%{}}|%{name}}"
+# chord-formats.roman : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
+# chord-formats.nashville : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
+
+/**************** Chord diagrams (generic) ****************/
+
+# diagrams.show : all
+# diagrams.sorted : false
+# diagrams.suppress : []
+
+/**************** Settings for PDF output ****************/
+
+# pdf.info.title : "%{title}"
+# pdf.info.author : ""
+# pdf.info.subject : ""
+# pdf.info.keywords : ""
+
+# pdf.papersize : a4
+
+# pdf.theme.foreground : black
+# pdf.theme.foreground-medium : grey70
+# pdf.theme.foreground-light : grey90
+# pdf.theme.background : none
+
+# pdf.columnspace : 20
+
+# pdf.margintop : 80
+# pdf.marginbottom : 40
+# pdf.marginleft : 40
+# pdf.marginright : 40
+# pdf.headspace : 60
+# pdf.footspace : 20
+
+# pdf.head-first-only : false
+
+# pdf.spacing.title : 1.2
+# pdf.spacing.lyrics : 1.2
+# pdf.spacing.chords : 1.2
+# pdf.spacing.diagramchords : 1.2
+# pdf.spacing.grid : 1.2
+# pdf.spacing.tab : 1
+# pdf.spacing.toc : 1.4
+# pdf.spacing.empty : 1
+
+// Chorus
+pdf.chorus.indent : 20
+# pdf.chorus.bar.offset : 8
+# pdf.chorus.bar.width : 1
+# pdf.chorus.bar.color : foreground
+# pdf.chorus.tag : Chorus
+# pdf.chorus.recall.choruslike : false
+# pdf.chorus.recall.tag : Chorus
+# pdf.chorus.recall.type : comment
+# pdf.chorus.recall.quote : false
+
+// Section margin labels
+# pdf.labels.width : auto
+# pdf.labels.align : left
+# pdf.labels.comment : ""
+
+# pdf.chordscolumn : 0
+# pdf.capoheading : "%{capo|Capo: %{}}"
+# pdf.titles-directive-ignore : false
+
+// Chord diagrams for string instruments
+pdf.diagrams.show : right
+# pdf.diagrams.align : left
+# pdf.diagrams.width : 6
+# pdf.diagrams.height : 6
+# pdf.diagrams.vcells : 4
+# pdf.diagrams.linewidth : 0.1
+# pdf.diagrams.nutwidth : 5
+# pdf.diagrams.hspace : 3.95
+# pdf.diagrams.vspace : 3
+# pdf.diagrams.dotsize : 0.8
+# pdf.diagrams.barstyle : line
+# pdf.diagrams.barwidth : 0.8
+# pdf.diagrams.fingers : true
+# pdf.diagrams.fretbasetext : %s
+# pdf.diagrams.fretbaseposition : left
+
+// Chord diagrams for keyboards
+# pdf.kbdiagrams.show : bottom
+# pdf.kbdiagrams.align : left
+# pdf.kbdiagrams.width : 4
+# pdf.kbdiagrams.height : 20
+# pdf.kbdiagrams.keys : 14
+# pdf.kbdiagrams.base : C
+# pdf.kbdiagrams.linewidth : 0.1
+# pdf.kbdiagrams.pressed : foreground-medium
+# pdf.kbdiagrams.hspace : 3.95
+# pdf.kbdiagrams.vspace : 0.3
+
+// Grid section lines
+# pdf.grids.cellbar.width : 0
+# pdf.grids.cellbar.color : foreground-medium
+# pdf.grids.show : true
+# pdf.grids.stretch : 0.825
+# pdf.grids.symbols.color : blue
+# pdf.grids.volta.span : 0.7
+# pdf.grids.volta.color : blue
+
+// Songbook settings
+# pdf.songbook.dual-pages : true
+# pdf.songbook.align-tocs : true
+# pdf.songbook.align-songs : true
+# pdf.songbook.align-songs-spread : false
+# pdf.songbook.align-songs-extend : false
+# pdf.songbook.sort-songs : false
+# pdf.songbook.compact-songs : false
+# pdf.songbook.cover : false
+# pdf.songbook.front-matter : false
+# pdf.songbook.back-matter : false
+
+// Page formats
+// Variables: %{title}, %{subtitle}, %{page}, %{artist}, %{author}, %{ccli}, %{footer}
+// Variables musicales: %{key}, %{tempo}, %{time}, %{duration}
+# pdf.formats.default.title : [ "" "" "" ]
+# pdf.formats.default.subtitle : [ "" "" "" ]
+# pdf.formats.default.footer : [ "%{title}" "" "%{page}" ]
+# pdf.formats.default.background : ""
+
+// Primera página de cada canción — *** PERSONALIZADO JPP ***
+pdf.formats.title.title    : [ "" "%{title}" "" ]
+pdf.formats.title.subtitle : [ "%{author}" "%{subtitle}" "%{ccli|CCLI: %{}}" ]
+pdf.formats.title.footer   : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+# pdf.formats.title.background : ""
+
+// Primera página del documento
+pdf.formats.first.footer : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+# pdf.formats.first.background : ""
+
+# pdf.formats.filler.background : ""
+
+# pdf.split-marker : [ "" "" "" ]
+# pdf.fontdir : []
+# pdf.corefonts.remap : null
+
+// Font families
+# pdf.fontconfig.serif.           : Times-Roman
+# pdf.fontconfig.serif.bold       : Times-Bold
+# pdf.fontconfig.serif.italic     : Times-Italic
+# pdf.fontconfig.serif.bolditalic : Times-BoldItalic
+# pdf.fontconfig.times.           : Times-Roman
+# pdf.fontconfig.times.bold       : Times-Bold
+# pdf.fontconfig.times.italic     : Times-Italic
+# pdf.fontconfig.times.bolditalic : Times-BoldItalic
+# pdf.fontconfig.helvetica.            : Helvetica
+# pdf.fontconfig.helvetica.bold        : Helvetica-Bold
+# pdf.fontconfig.helvetica.oblique     : Helvetica-Oblique
+# pdf.fontconfig.helvetica.boldoblique : Helvetica-BoldOblique
+# pdf.fontconfig.sans.           : Helvetica
+# pdf.fontconfig.sans.bold       : Helvetica-Bold
+# pdf.fontconfig.sans.italic     : Helvetica-Oblique
+# pdf.fontconfig.sans.bolditalic : Helvetica-BoldOblique
+# pdf.fontconfig.sans-serif.           : Helvetica
+# pdf.fontconfig.sans-serif.bold       : Helvetica-Bold
+# pdf.fontconfig.sans-serif.italic     : Helvetica-Oblique
+# pdf.fontconfig.sans-serif.bolditalic : Helvetica-BoldOblique
+# pdf.fontconfig.courier.           : Courier
+# pdf.fontconfig.courier.bold       : Courier-Bold
+# pdf.fontconfig.courier.italic     : Courier-Oblique
+# pdf.fontconfig.courier.bolditalic : Courier-BoldOblique
+# pdf.fontconfig.mono.           : Courier
+# pdf.fontconfig.mono.bold       : Courier-Bold
+# pdf.fontconfig.mono.italic     : Courier-Oblique
+# pdf.fontconfig.mono.bolditalic : Courier-BoldOblique
+# pdf.fontconfig.monospace.           : Courier
+# pdf.fontconfig.monospace.bold       : Courier-Bold
+# pdf.fontconfig.monospace.italic     : Courier-Oblique
+# pdf.fontconfig.monospace.bolditalic : Courier-BoldOblique
+# pdf.fontconfig.muse.           : MuseJazzText.otf
+# pdf.fontconfig.muse.bold       : MuseJazzText.otf
+# pdf.fontconfig.muse.italic     : MuseJazzText.otf
+# pdf.fontconfig.muse.bolditalic : MuseJazzText.otf
+# pdf.fontconfig.musejazztext.           : MuseJazzText.otf
+# pdf.fontconfig.musejazztext.bold       : MuseJazzText.otf
+# pdf.fontconfig.musejazztext.italic     : MuseJazzText.otf
+# pdf.fontconfig.musejazztext.bolditalic : MuseJazzText.otf
+
+// Fonts — *** PALETA DE COLORES JPP ***
+// Herencias por defecto:
+//   subtitle, chorus, comment, toc, empty  --> text
+//   comment_italic, comment_box, annotation, grid --> chord
+//   grid_margin  --> comment
+//   footer       --> subtitle @ 60%
+//   diagram      --> comment
+//   diagram_base --> text (small)
+// Nota: tamaños y colores definidos en la sección AJUSTES RÁPIDOS al inicio
+
+// Comentarios — fondo gris muy tenue
+pdf.fonts.comment.background : "#f0f0f0"
+
+# pdf.fonts.comment_italic : "Helvetica-Oblique 12"
+# pdf.fonts.comment_box : "sans 12; frame=1"
+# pdf.fonts.tab : "mono 10"
+# pdf.fonts.grid : "sans 10"
+# pdf.fonts.chordfingers.numbercolor : background
+
+/**************** A2Crd ****************/
+
+# a2crd.infer-titles : true
+# a2crd.classifier : pct_chords
+# a2crd.tabstop : 8
+
+/**************** Markup ****************/
+
+# markup.shortcodes {}
+
+/**************** Parser ****************/
+
+# parser.preprocess.all       : []
+# parser.preprocess.directive : []
+# parser.preprocess.songline  : []
+# parser.altbrackets : null

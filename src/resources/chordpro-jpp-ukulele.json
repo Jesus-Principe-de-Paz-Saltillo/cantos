@@ -1,0 +1,343 @@
+// =============================================================
+// ChordPro — Configuración JPP para UKULELE
+//
+// Basado en chordpro-jpp-configuration.json (guitarra)
+// con los ajustes específicos para ukulele.
+//
+// Afinación estándar ukulele: G C E A (cuerdas 4-3-2-1)
+// Los frets y fingers van en ese orden: [ str4 str3 str2 str1 ]
+//
+// Paleta de colores JPP (base: #134f5c teal oscuro):
+//   Título      : #0d3540  (teal muy oscuro)
+//   Acordes     : #497882  (teal suave)
+//   Subtítulo   : #444444  (gris oscuro)
+//   Footer      : #999999  (gris claro)
+//   Texto       : #666666  (gris medio)
+//
+// Documentación oficial:
+//   PDF:      https://www.chordpro.org/chordpro/chordpro-configuration-pdf/
+//   General:  https://www.chordpro.org/chordpro/chordpro-configuration-generic/
+// =============================================================
+
+// =============================================================
+// AJUSTES RÁPIDOS — modifica aquí sin buscar en el resto del archivo
+// =============================================================
+
+// Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
+// para escalar uniformemente
+pdf.fonts.title.description    : "serif bold 14"
+pdf.fonts.subtitle.description : "serif 12"
+pdf.fonts.text.description     : "serif 12"
+pdf.fonts.chord.description    : "sans italic 10"
+pdf.fonts.footer.description   : "serif 10"
+pdf.fonts.toc.description      : "serif 11"
+pdf.fonts.comment.description  : "sans 12"
+
+// Colores
+pdf.fonts.title.color    : "#0d3540"
+pdf.fonts.subtitle.color : "#444444"
+pdf.fonts.text.color     : "#666666"
+pdf.fonts.chord.color    : "#497882"
+pdf.fonts.footer.color   : "#999999"
+pdf.fonts.toc.color      : "#666666"
+
+// =============================================================
+
+/**************** Para la GUI ****************/
+
+config.type        : config
+config.title       : "JPP Ukulele"
+config.description : "Configuración personalizada JPP para ukulele."
+
+/**************** General settings ****************/
+
+settings.strict : true
+
+# settings.titles : center
+# settings.columns : 1
+# settings.suppress-empty-chords : true
+# settings.suppress-empty-lyrics : true
+# settings.lyrics-only : false
+# settings.inline-chords : false
+# settings.inline-annotations : %s
+# settings.chords-under : false
+# settings.transpose : 0
+# settings.enharmonic-transpose : true
+# settings.transcode : ""
+# settings.decapo : false
+# settings.chordnames : strict
+# settings.notenames : false
+# settings.chords-canonical : false
+# settings.choruslabels : true
+# settings.truesf : false
+# settings.maj7delta : false
+# settings.wrapindent : x
+# settings.flowtext : false
+
+/**************** Metadata ****************/
+
+metadata.keys : [ append author ccli footer key tempo time duration ]
+
+# metadata.strict : true
+# metadata.separator : "; "
+# metadata.autosplit : true
+
+/**************** Date formats ****************/
+
+# dates.today.format : "%A, %B %e, %Y"
+
+/**************** User info ****************/
+
+# user.name : ""
+# user.fullname : ""
+
+/**************** Instrument ****************/
+
+// Carga el preset oficial de ukulele (afinación GCEA y acordes built-in)
+include : [ ukulele ]
+instrument.type : "ukulele"
+
+/**************** Acordes custom para ukulele ****************/
+
+// Afinación: G C E A (cuerdas 4 3 2 1)
+// frets:   [ str4  str3  str2  str1 ]
+// fingers: [ str4  str3  str2  str1 ]
+// 0 = cuerda al aire, -1 = cuerda silenciada
+
+chords: [
+  {
+    // Am7 — todas las cuerdas al aire en ukulele estándar GCEA
+    // Notas: G C E A = G A C E = Am7 ✓
+    name    : "Am7"
+    base    : 1
+    frets   : [ 0  0  0  0 ]
+    fingers : [ 0  0  0  0 ]
+  }
+  {
+    // Am(add4) — notas: A C D E
+    // str4(G) fret2=A | str3(C) fret2=D | str2(E) open=E | str1(A) open=A
+    // ⚠️ Verifica esta posición antes de usarla
+    name    : "Am(add4)"
+    base    : 1
+    frets   : [ 2  2  0  0 ]
+    fingers : [ 1  2  0  0 ]
+  }
+  { name : "Amadd4"  copy : "Am(add4)" }   // forma correcta
+  { name : "AmAdd4"  copy : "Am(add4)" }   // variante mayúsculas
+  { name : "*"  display : "*"  frets : [] fingers : [] }   // anotación — evita warning de [*]
+  {
+    // Dsus2 — notas: D E A
+    // Cuerdas:  4    3    2    1
+    //           G    C    E    A
+    name    : "Dsus2"
+    base    : 1
+    frets   : [ 2    2    0    0 ]
+    fingers : [ 2    3    0    0 ]
+  }
+  {
+    // D7sus4 — notas: D G A C
+    // str4(G) open=G | str3(C) fret2=D | str2(E) fret3=G | str1(A) fret2=B... 
+    // Posición más común: 2 2 1 3
+    // ⚠️ Verifica esta posición antes de usarla
+    name    : "D7sus4"
+    base    : 1
+    frets   : [ 2  2  1  3 ]
+    fingers : [ 2  3  1  4 ]
+  }
+]
+
+/**************** Chord name formats ****************/
+
+# chord-formats.common : "%{root|%{}%{qual|%{}}%{ext|%{}}%{bass|/%{}}|%{name}}"
+# chord-formats.roman : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
+# chord-formats.nashville : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
+
+/**************** Chord diagrams (generic) ****************/
+
+# diagrams.show : all
+# diagrams.sorted : false
+# diagrams.suppress : []
+
+/**************** Settings for PDF output ****************/
+
+# pdf.info.title : "%{title}"
+# pdf.info.author : ""
+# pdf.info.subject : ""
+# pdf.info.keywords : ""
+
+# pdf.papersize : a4
+
+# pdf.theme.foreground : black
+# pdf.theme.foreground-medium : grey70
+# pdf.theme.foreground-light : grey90
+# pdf.theme.background : none
+
+# pdf.columnspace : 20
+
+# pdf.margintop : 80
+# pdf.marginbottom : 40
+# pdf.marginleft : 40
+# pdf.marginright : 40
+# pdf.headspace : 60
+# pdf.footspace : 20
+
+# pdf.head-first-only : false
+
+# pdf.spacing.title : 1.2
+# pdf.spacing.lyrics : 1.2
+# pdf.spacing.chords : 1.2
+# pdf.spacing.diagramchords : 1.2
+# pdf.spacing.grid : 1.2
+# pdf.spacing.tab : 1
+# pdf.spacing.toc : 1.4
+# pdf.spacing.empty : 1
+
+// Chorus
+# pdf.chorus.indent : 0
+pdf.chorus.indent : 20
+# pdf.chorus.bar.offset : 8
+# pdf.chorus.bar.width : 1
+# pdf.chorus.bar.color : foreground
+# pdf.chorus.tag : Chorus
+# pdf.chorus.recall.choruslike : false
+# pdf.chorus.recall.tag : Chorus
+# pdf.chorus.recall.type : comment
+# pdf.chorus.recall.quote : false
+
+// Labels
+# pdf.labels.width : auto
+# pdf.labels.align : left
+# pdf.labels.comment : ""
+
+# pdf.chordscolumn : 0
+# pdf.capoheading : "%{capo|Capo: %{}}"
+# pdf.titles-directive-ignore : false
+
+// Diagramas — ukulele tiene 4 cuerdas, el ancho se ajusta automáticamente
+pdf.diagrams.show : right
+# pdf.diagrams.align : left
+# pdf.diagrams.width : 6
+# pdf.diagrams.height : 6
+# pdf.diagrams.vcells : 4
+# pdf.diagrams.linewidth : 0.1
+# pdf.diagrams.nutwidth : 5
+# pdf.diagrams.hspace : 3.95
+# pdf.diagrams.vspace : 3
+# pdf.diagrams.dotsize : 0.8
+# pdf.diagrams.barstyle : line
+# pdf.diagrams.barwidth : 0.8
+# pdf.diagrams.fingers : true
+# pdf.diagrams.fretbasetext : %s
+# pdf.diagrams.fretbaseposition : left
+
+# pdf.kbdiagrams.show : bottom
+# pdf.kbdiagrams.align : left
+# pdf.kbdiagrams.width : 4
+# pdf.kbdiagrams.height : 20
+# pdf.kbdiagrams.keys : 14
+# pdf.kbdiagrams.base : C
+# pdf.kbdiagrams.linewidth : 0.1
+# pdf.kbdiagrams.pressed : foreground-medium
+# pdf.kbdiagrams.hspace : 3.95
+# pdf.kbdiagrams.vspace : 0.3
+
+# pdf.grids.cellbar.width : 0
+# pdf.grids.cellbar.color : foreground-medium
+# pdf.grids.show : true
+# pdf.grids.stretch : 0.825
+# pdf.grids.symbols.color : blue
+# pdf.grids.volta.span : 0.7
+# pdf.grids.volta.color : blue
+
+# pdf.songbook.dual-pages : true
+# pdf.songbook.align-tocs : true
+# pdf.songbook.align-songs : true
+# pdf.songbook.align-songs-spread : false
+# pdf.songbook.align-songs-extend : false
+# pdf.songbook.sort-songs : false
+# pdf.songbook.compact-songs : false
+# pdf.songbook.cover : false
+# pdf.songbook.front-matter : false
+# pdf.songbook.back-matter : false
+
+// Page formats
+# pdf.formats.default.title : [ "" "" "" ]
+# pdf.formats.default.subtitle : [ "" "" "" ]
+# pdf.formats.default.footer : [ "%{title}" "" "%{page}" ]
+# pdf.formats.default.background : ""
+
+pdf.formats.title.title    : [ "" "%{title}" "" ]
+pdf.formats.title.subtitle : [ "%{author}" "%{subtitle}" "%{ccli|CCLI: %{}}" ]
+pdf.formats.title.footer   : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+# pdf.formats.title.background : ""
+
+pdf.formats.first.footer : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+# pdf.formats.first.background : ""
+
+# pdf.formats.filler.background : ""
+
+# pdf.split-marker : [ "" "" "" ]
+# pdf.fontdir : []
+# pdf.corefonts.remap : null
+
+// Fontconfig
+# pdf.fontconfig.serif.           : Times-Roman
+# pdf.fontconfig.serif.bold       : Times-Bold
+# pdf.fontconfig.serif.italic     : Times-Italic
+# pdf.fontconfig.serif.bolditalic : Times-BoldItalic
+# pdf.fontconfig.sans.           : Helvetica
+# pdf.fontconfig.sans.bold       : Helvetica-Bold
+# pdf.fontconfig.sans.italic     : Helvetica-Oblique
+# pdf.fontconfig.sans.bolditalic : Helvetica-BoldOblique
+# pdf.fontconfig.mono.           : Courier
+# pdf.fontconfig.mono.bold       : Courier-Bold
+# pdf.fontconfig.mono.italic     : Courier-Oblique
+# pdf.fontconfig.mono.bolditalic : Courier-BoldOblique
+
+// Fonts — *** PALETA DE COLORES JPP ***
+// Herencias por defecto:
+//   subtitle, chorus, comment, toc, empty  --> text
+//   comment_italic, comment_box, annotation, grid --> chord
+//   grid_margin  --> comment
+//   footer       --> subtitle @ 60%
+//   diagram      --> comment
+//   diagram_base --> text (small)
+
+// Título de la canción — teal muy oscuro
+
+// Subtítulo (autor) — gris oscuro
+
+// Letra de la canción — gris medio
+
+// Acordes — teal suave *** PERSONALIZADO JPP ***
+// Para cambiar el tamaño edita el número al final (ej: "sans italic 12")
+
+// Footer — gris claro
+
+// Tabla de contenidos — gris medio
+
+// Comentarios — fondo gris muy tenue
+pdf.fonts.comment.background : "#f0f0f0"
+
+# pdf.fonts.comment_italic : "Helvetica-Oblique 12"
+# pdf.fonts.comment_box : "sans 12; frame=1"
+# pdf.fonts.tab : "mono 10"
+# pdf.fonts.grid : "sans 10"
+# pdf.fonts.chordfingers.numbercolor : background
+
+/**************** A2Crd ****************/
+
+# a2crd.infer-titles : true
+# a2crd.classifier : pct_chords
+# a2crd.tabstop : 8
+
+/**************** Markup ****************/
+
+# markup.shortcodes {}
+
+/**************** Parser ****************/
+
+# parser.preprocess.all       : []
+# parser.preprocess.directive : []
+# parser.preprocess.songline  : []  // para ignorar [*] como acorde ver diagrams.suppress
+# parser.altbrackets : null

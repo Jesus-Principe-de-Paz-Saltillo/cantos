@@ -1,41 +1,41 @@
 {title: H323 - En Jesucristo, el Rey de Paz}
 {author: Fanny J. Crosby, 1873}
 # {ccli: }
-{key: D}
+{key: C}
 {tempo: 60}
 {time: 4/4}
 {duration: 2:30}
 # sample:https://youtu.be/RcEv8ZfRWqw
-{footer: Transposición sugerida: C}
+{footer: Tono Original: D}
 
-{c:Verse 1}
+{c:Verso 1}
 {start_of_verse:-}
-[D]En Jesucristo, [G]Rey de p[D]az,
-En horas negr[A]as d[E]e tempest[A]ad,
-H[D]allan las almas d[G]ulce sol[D]az,
-Grato consu[G]elo, f[D]elicidad.
+[C]En Jesucristo, [F]Rey de p[C]az,
+En horas negr[G]as d[D]e tempest[G]ad,
+H[C]allan las almas d[F]ulce sol[C]az,
+Grato consu[F]elo, f[C]elicidad.
 {end_of_verse}
 
-{c:Chorus}
+{c:Coro}
 {start_of_chorus:-}
-Gloria cantemos [G]al Redent[D]or
-Que por nos[G]otr[D]os v[A]ino a m[E]or[A]ir;
-[A7]y que la gr[D]acia d[G]el Salvad[D]or
-Siempre prot[G]eja nu[D]estr[A]o viv[D]ir.
+Gloria cantemos [F]al Redent[C]or
+Que por nos[F]otr[C]os v[G]ino a m[D]or[G]ir;
+[G7]y que la gr[C]acia d[F]el Salvad[C]or
+Siempre prot[F]eja nu[C]estr[G]o viv[C]ir.
 {end_of_chorus}
 
-{c:Verse 2}
+{c:Verso 2}
 {start_of_verse:-}
-En nuestras luchas, [G]en el dol[D]or,
-En tristes h[A]oras d[E]e tentaci[A]ón
-Cr[D]isto nos llena d[G]e su vig[D]or
-Y da ali[G]ento [D]al corazón.
+En nuestras luchas, [F]en el dol[C]or,
+En tristes h[G]oras d[D]e tentaci[G]ón
+Cr[C]isto nos llena d[F]e su vig[C]or
+Y da ali[F]ento [C]al corazón.
 {end_of_verse}
 
-{c:Verse 3}
+{c:Verso 3}
 {start_of_verse:-}
-Cuando luchamos ll[G]enos de f[D]e
-Y no quer[A]emos d[E]esfall[A]ecer,
-Cr[D]isto nos dice: "Si[G]empre os dar[D]é
-Gracia div[G]ina, s[D]anto poder".
+Cuando luchamos ll[F]enos de f[C]e
+Y no quer[G]emos d[D]esfall[G]ecer,
+Cr[C]isto nos dice: "Si[F]empre os dar[C]é
+Gracia div[F]ina, s[C]anto poder".
 {end_of_verse}

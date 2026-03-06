@@ -1,46 +1,41 @@
 {title: C110 - Noble Sosten}
 # {author: ?}
-# Mexico siglo XX
 # {ccli: }
 {key: D}
 {tempo: 60}
 {time: 4/4}
 {duration: 3:45}
 # sample:https://youtu.be/ODeWUFL8j_M
-# himnario Celebremos su gloria 378
-# {footer: Tono original: ?}
+{footer: Mexico siglo XX | himnario Celebremos su gloria 378}
 
 {c:Verse 1}
 {start_of_verse:-}
-[D]Noble sost[A]én [Bm]      de la esperanza m[F#m]ía,    [G]
-fuente bendit[G]a - [A]a   de vida et[A7]erna;  [D]
-tan solo el [A]alma [Bm]    que en Él sus fuerzas f[F#m]ía    [G]
-Tiene p[G]a - [A]az, tiene p[A7]az
+[D]Noble sost[A]én[Bm], de la esperanza m[F#m]ía,    [G]
+fuente bendit[G]a—[A]a de vida et[A7]erna;  [D]
+tan solo el [A]alma [Bm]- que en Él sus fuerzas f[F#m]ía    [G]
+tiene p[G]a—[A]az, tiene p[A7]az
 {end_of_verse}
-
 
 {c:Chorus}
 {start_of_chorus:-}
-[D]Mi sost[A]én [Bm]es Jes[F#m]ús    [G]
-nunca en la l[D]ucha desm[A]ayar podr[D]é.
-[D]Mi so[A]stén es [Bm]      (Cristo) Jesú[F#m]s   [G]
+M[D]i sost[A]én [Bm]es Jes[F#m]ús    [G]
+nunca en la l[D]ucha desmay[A]ar podr[D]é.
+M[D]i sost[A]én es[Bm]: (Cristo) Jesú[F#m]s   [G]
 nunca en la l[D]ucha desmay[A]ar podr[D]é
 {end_of_chorus}
 
+{c:Verse 3}
+{start_of_verse:-}
+[D]Yo soy muy d[A]ébil[Bm], pero en ti soy fue[F#m]rte;    [G]
+nunca en la luch[G]a—[A]a, desmayar podr[A7]é.  [D]
+[D]Dura es la [A]lucha[Bm], difícil la tare[F#m]a;   [G]
+de venc[G]e—[A]er de venc[A7]er.  [D]
+{end_of_verse}
 
 {c:Verse 2}
 {start_of_verse:-}
-[D]Yo soy muy d[A]ébil, [Bm]     pero en ti soy fue[F#m]rte;    [G]
-nunca en la luch[G]a - [A]a, desmayar podr[A7]é.  [D]
-Mi espíritu renue[A]va[Bm]       con la idea nue[F#m]va    [G]
-de venc[G]e - [A]er     de venc[A7]er.  [D]
-{end_of_verse}
-
-
-{c:Verse 3}
-{start_of_verse:-}
-[D]Dura es la [A]lucha,[Bm]     difícil la tare[F#m]a;   [G]
-de venc[G]e - [A]er     de venc[A7]er.  [D]
-Si estas conmi[A]go [Bm]    ni a la misma mue[F#m]rte    [G]
-temer[G]é - [A]é,   No temer[A7]é. (Porque)
+Mi espíritu renue[A]va[Bm]- con la idea nue[F#m]va    [G]
+de venc[G]e—[A]er de venc[A7]er.  [D]
+Si estas conmi[A]go [Bm]- ni a la misma mue[F#m]rte    [G]
+temer[G]é—[A]é,   No temer[A7]é. (Porque)
 {end_of_verse}
