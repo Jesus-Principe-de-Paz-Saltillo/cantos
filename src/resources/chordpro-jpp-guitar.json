@@ -1,10 +1,17 @@
 // =============================================================
-// ChordPro — Archivo de configuración personalizado (JPP)
+// ChordPro — Archivo de configuración personalizado (JPP) — GUITARRA
 //
 // Basado en el starter config oficial de ChordPro + documentación completa.
 // Todos los parámetros están presentes con sus valores por defecto.
 // Los que NO se han tocado están comentados con "# ".
 // Los que SÍ están activos son las personalizaciones JPP.
+//
+// Paleta de colores JPP (base: #134f5c teal oscuro):
+//   Título      : #0d3540  (teal muy oscuro)
+//   Acordes     : #134f5c  (teal base)
+//   Subtítulo   : #1a6b7a  (teal medio)
+//   CCLI/Footer : #2d9cad  (teal claro)
+//   Fondos      : #e8f4f6  (teal muy tenue)
 //
 // Documentación oficial:
 //   PDF:      https://www.chordpro.org/chordpro/chordpro-configuration-pdf/
@@ -15,99 +22,44 @@
 
 /**************** Para la GUI ****************/
 
-// Tipo de configuración
-config.type : config
-
-// Título que aparece en los menús de la app
-config.title : "JPP Config"
-
-// Descripción
-config.description : "Configuración personalizada JPP para ChordPro."
+config.type        : config
+config.title       : "JPP Guitar"
+config.description : "Configuración personalizada JPP para guitarra."
 
 /**************** General settings ****************/
 
-// Chords parsing strategy: strict (only known chords) or relaxed
 settings.strict : true
 
-// Titles flush: default center
 # settings.titles : center
-
-// Number of columns, default: 1
 # settings.columns : 1
-
-// Suppress empty chord lines. Command line: -a (--single-space)
 # settings.suppress-empty-chords : true
-
-// Suppress blank lyrics lines
 # settings.suppress-empty-lyrics : true
-
-// Suppress chords. Command line: -l (--lyrics-only)
 # settings.lyrics-only : false
-
-// Chords inline instead of above.
-// May be a string containing pretext %s posttext.
-// Defaults to "[%s]" if set to a value that does not contain "%s".
 # settings.inline-chords : false
-
-// Same, for annotations. Ignored unless inline-chords is set.
-// Must be a string containing pretext %s posttext. Default is "%s".
 # settings.inline-annotations : %s
-
-// Chords under the lyrics
 # settings.chords-under : false
-
-// Transpose chords. 0 = no transpose
 # settings.transpose : 0
-
-// Force enharmonic when transposing (experimental)
 # settings.enharmonic-transpose : true
-
-// Transcode chords. "" = no transcode
 # settings.transcode : ""
-
-// Eliminate capo by transposing chords
 # settings.decapo : false
-
-// Strictness of parsing chord names
 # settings.chordnames : strict
-
-// Allow parsing of note names in []
 # settings.notenames : false
-
-// Always replace chords by their canonical form
 # settings.chords-canonical : false
-
-// If false, chorus labels are used as tags
 # settings.choruslabels : true
-
-// Substitute Unicode sharp/flats in chord names
 # settings.truesf : false
-
-// Substitute delta for maj7 in chord names
 # settings.maj7delta : false
-
-// Indent for wrapped lines. Actual indent is the stringwidth.
 # settings.wrapindent : x
-
-// Consider text flowed
 # settings.flowtext : false
 
 /**************** Metadata ****************/
 
-// Append to known metadata items. Note that the first item must be
-// "append" or it will overwrite instead of append...
 metadata.keys : [ append author ccli footer ]
 
-// If strict, only the known keys are allowed
 # metadata.strict : true
-
-// The separator is used to concatenate multiple values
 # metadata.separator : "; "
-
-// Split data on separator
 # metadata.autosplit : true
 
-/**************** Date formats. Format is a strftime template ****************/
+/**************** Date formats ****************/
 
 # dates.today.format : "%A, %B %e, %Y"
 
@@ -115,6 +67,12 @@ metadata.keys : [ append author ccli footer ]
 
 # user.name : ""
 # user.fullname : ""
+
+/**************** Instrument ****************/
+
+// Tipo de instrumento. Afecta los diagramas generados.
+// Opciones: "guitar", "ukulele", "keyboard"
+instrument.type : "guitar"
 
 /**************** User defined chords ****************/
 
@@ -149,59 +107,52 @@ chords: [
     fingers : [  0   0    2    0    1    0 ]
   }
   {
-    // D7sus4: D suspendido con 7ma (Re-Sol-La-Do)
-    // Posición: xx0213
+    // Dsus2 — notas: D E A
+    // Cuerdas:  6    5    4    3    2    1
+    //           Mi   La   Re   Sol  Si   Mi
+    name    : "Dsus2"
+    base    : 1
+    frets   : [ -1  -1   0    2    3    0 ]
+    fingers : [  0   0   0    1    3    0 ]
+  }
+  {
+    // D7sus4: D suspendido con 7ma — notas: D G A C
+    // Cuerdas:  6    5    4    3    2    1
     name    : "D7sus4"
     base    : 1
-    frets   : [ -1 -1 0 2 1 3 ]
-    fingers : [  0  0 0 2 1 3 ]
+    frets   : [ -1  -1   0    2    1    3 ]
+    fingers : [  0   0   0    2    1    3 ]
   }
 ]
 
 /**************** Chord name formats ****************/
 
-// Format string for rendering common chord names
 # chord-formats.common : "%{root|%{}%{qual|%{}}%{ext|%{}}%{bass|/%{}}|%{name}}"
-
-// Format string for rendering roman chord names
 # chord-formats.roman : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
-
-// Format string for rendering nashville chord names
 # chord-formats.nashville : "%{root|%{}%{qual|<sup>%{}</sup>}%{ext|<sup>%{}</sup>}%{bass|/<sub>%{}</sub>}|%{name}}"
 
-/**************** Chord diagrams (generic — qué acordes imprimir) ****************/
+/**************** Chord diagrams (generic) ****************/
 
-// "all": shows all chords / "user": user defined only / "none": suppresses all
 # diagrams.show : all
-
-// Sort diagrams by key. Default is order of appearance
 # diagrams.sorted : false
-
-// Chords that will not generate diagrams (e.g. trivial ones)
-# diagrams.suppress : []     // lista de acordes que no generarán diagrama
+# diagrams.suppress : []
 
 /**************** Settings for PDF output ****************/
 
-// PDF document properties
 # pdf.info.title : "%{title}"
 # pdf.info.author : ""
 # pdf.info.subject : ""
 # pdf.info.keywords : ""
 
-// Output paper size, e.g. "a4" or [595,842]
 # pdf.papersize : a4
 
-// Theme
 # pdf.theme.foreground : black
 # pdf.theme.foreground-medium : grey70
 # pdf.theme.foreground-light : grey90
 # pdf.theme.background : none
 
-// Distance between columns in multi-column mode
 # pdf.columnspace : 20
 
-// Page margins (in pt, 1pt = 1/72 inch)
-// See: https://www.chordpro.org/chordpro/images/layout-large.png
 # pdf.margintop : 80
 # pdf.marginbottom : 40
 # pdf.marginleft : 40
@@ -209,10 +160,8 @@ chords: [
 # pdf.headspace : 60
 # pdf.footspace : 20
 
-// Heading on first page only
 # pdf.head-first-only : false
 
-// Baseline distances as a factor of the font size
 # pdf.spacing.title : 1.2
 # pdf.spacing.lyrics : 1.2
 # pdf.spacing.chords : 1.2
@@ -222,8 +171,8 @@ chords: [
 # pdf.spacing.toc : 1.4
 # pdf.spacing.empty : 1
 
-// Chorus appearance
-# pdf.chorus.indent : 0
+// Chorus
+pdf.chorus.indent : 20
 # pdf.chorus.bar.offset : 8
 # pdf.chorus.bar.width : 1
 # pdf.chorus.bar.color : foreground
@@ -238,37 +187,34 @@ chords: [
 # pdf.labels.align : left
 # pdf.labels.comment : ""
 
-// Chords in a side column (alternative style)
 # pdf.chordscolumn : 0
 # pdf.capoheading : "%{capo|Capo: %{}}"
-
-// Ignore {titles} legacy directives
 # pdf.titles-directive-ignore : false
 
 // Chord diagrams for string instruments
-pdf.diagrams.show : right              // or top, bottom, below, false
-# pdf.diagrams.align : left            // or right, center, spread
-# pdf.diagrams.width : 6               // of a cell
-# pdf.diagrams.height : 6              // of a cell
-# pdf.diagrams.vcells : 4              // vertically
-# pdf.diagrams.linewidth : 0.1         // fraction of cell width
-# pdf.diagrams.nutwidth : 5            // in linewidths
-# pdf.diagrams.hspace : 3.95           // horizontal space between, fraction of width
-# pdf.diagrams.vspace : 3              // vertical space between, fraction of height
-# pdf.diagrams.dotsize : 0.8           // fraction of cell
-# pdf.diagrams.barstyle : line         // or arc
-# pdf.diagrams.barwidth : 0.8          // fraction of dot width
-# pdf.diagrams.fingers : true          // show fingering if available (or "below")
-# pdf.diagrams.fretbasetext : %s       // text to show the fret base (%s = number)
-# pdf.diagrams.fretbaseposition : left // or right
+pdf.diagrams.show : right
+# pdf.diagrams.align : left
+# pdf.diagrams.width : 6
+# pdf.diagrams.height : 6
+# pdf.diagrams.vcells : 4
+# pdf.diagrams.linewidth : 0.1
+# pdf.diagrams.nutwidth : 5
+# pdf.diagrams.hspace : 3.95
+# pdf.diagrams.vspace : 3
+# pdf.diagrams.dotsize : 0.8
+# pdf.diagrams.barstyle : line
+# pdf.diagrams.barwidth : 0.8
+# pdf.diagrams.fingers : true
+# pdf.diagrams.fretbasetext : %s
+# pdf.diagrams.fretbaseposition : left
 
 // Chord diagrams for keyboards
 # pdf.kbdiagrams.show : bottom
 # pdf.kbdiagrams.align : left
 # pdf.kbdiagrams.width : 4
 # pdf.kbdiagrams.height : 20
-# pdf.kbdiagrams.keys : 14             // or 7, 10, 14, 17, 21
-# pdf.kbdiagrams.base : C              // or F
+# pdf.kbdiagrams.keys : 14
+# pdf.kbdiagrams.base : C
 # pdf.kbdiagrams.linewidth : 0.1
 # pdf.kbdiagrams.pressed : foreground-medium
 # pdf.kbdiagrams.hspace : 3.95
@@ -289,15 +235,14 @@ pdf.diagrams.show : right              // or top, bottom, below, false
 # pdf.songbook.align-songs : true
 # pdf.songbook.align-songs-spread : false
 # pdf.songbook.align-songs-extend : false
-# pdf.songbook.sort-songs : false      // false | "title" | "subtitle"
+# pdf.songbook.sort-songs : false
 # pdf.songbook.compact-songs : false
 # pdf.songbook.cover : false
 # pdf.songbook.front-matter : false
 # pdf.songbook.back-matter : false
 
 // Page formats
-// Variables disponibles: %{title}, %{subtitle}, %{page}, %{artist}, %{songindex}
-// On even pages, left and right parts are swapped automatically.
+// Variables: %{title}, %{subtitle}, %{page}, %{artist}, %{author}, %{ccli}, %{footer}
 # pdf.formats.default.title : [ "" "" "" ]
 # pdf.formats.default.subtitle : [ "" "" "" ]
 # pdf.formats.default.footer : [ "%{title}" "" "%{page}" ]
@@ -309,146 +254,116 @@ pdf.formats.title.subtitle : [ "%{author}" "%{subtitle}" "%{ccli|CCLI: %{}}" ]
 pdf.formats.title.footer   : [ "%{footer}" "" "%{page}" ]
 # pdf.formats.title.background : ""
 
-// Primera página del documento — heredar footer de title
+// Primera página del documento
 pdf.formats.first.footer : [ "%{footer}" "" "%{page}" ]
 # pdf.formats.first.background : ""
 
 # pdf.formats.filler.background : ""
 
-// Split marker for syllables that are smaller than chord width.
-// 3-part array: "start", "repeat", "final"
 # pdf.split-marker : [ "" "" "" ]
-
-// Font directories (for custom TrueType/OpenType fonts)
 # pdf.fontdir : []
-
-// Remap corefonts to better fonts. null = if possible
 # pdf.corefonts.remap : null
 
-// Font families — mapeo de familias a fuentes físicas
-// IMPORTANTE: la entrada con el punto al final indica la fuente regular
+// Font families
 # pdf.fontconfig.serif.           : Times-Roman
 # pdf.fontconfig.serif.bold       : Times-Bold
 # pdf.fontconfig.serif.italic     : Times-Italic
 # pdf.fontconfig.serif.bolditalic : Times-BoldItalic
-
 # pdf.fontconfig.times.           : Times-Roman
 # pdf.fontconfig.times.bold       : Times-Bold
 # pdf.fontconfig.times.italic     : Times-Italic
 # pdf.fontconfig.times.bolditalic : Times-BoldItalic
-
 # pdf.fontconfig.helvetica.            : Helvetica
 # pdf.fontconfig.helvetica.bold        : Helvetica-Bold
 # pdf.fontconfig.helvetica.oblique     : Helvetica-Oblique
 # pdf.fontconfig.helvetica.boldoblique : Helvetica-BoldOblique
-
 # pdf.fontconfig.sans.           : Helvetica
 # pdf.fontconfig.sans.bold       : Helvetica-Bold
 # pdf.fontconfig.sans.italic     : Helvetica-Oblique
 # pdf.fontconfig.sans.bolditalic : Helvetica-BoldOblique
-
 # pdf.fontconfig.sans-serif.           : Helvetica
 # pdf.fontconfig.sans-serif.bold       : Helvetica-Bold
 # pdf.fontconfig.sans-serif.italic     : Helvetica-Oblique
 # pdf.fontconfig.sans-serif.bolditalic : Helvetica-BoldOblique
-
 # pdf.fontconfig.courier.           : Courier
 # pdf.fontconfig.courier.bold       : Courier-Bold
 # pdf.fontconfig.courier.italic     : Courier-Oblique
 # pdf.fontconfig.courier.bolditalic : Courier-BoldOblique
-
 # pdf.fontconfig.mono.           : Courier
 # pdf.fontconfig.mono.bold       : Courier-Bold
 # pdf.fontconfig.mono.italic     : Courier-Oblique
 # pdf.fontconfig.mono.bolditalic : Courier-BoldOblique
-
 # pdf.fontconfig.monospace.           : Courier
 # pdf.fontconfig.monospace.bold       : Courier-Bold
 # pdf.fontconfig.monospace.italic     : Courier-Oblique
 # pdf.fontconfig.monospace.bolditalic : Courier-BoldOblique
-
 # pdf.fontconfig.muse.           : MuseJazzText.otf
 # pdf.fontconfig.muse.bold       : MuseJazzText.otf
 # pdf.fontconfig.muse.italic     : MuseJazzText.otf
 # pdf.fontconfig.muse.bolditalic : MuseJazzText.otf
-
 # pdf.fontconfig.musejazztext.           : MuseJazzText.otf
 # pdf.fontconfig.musejazztext.bold       : MuseJazzText.otf
 # pdf.fontconfig.musejazztext.italic     : MuseJazzText.otf
 # pdf.fontconfig.musejazztext.bolditalic : MuseJazzText.otf
 
-// Fonts — mapeo de elementos de salida a fuentes
-// Los siguientes elementos heredan por defecto:
-//   subtitle       --> text
-//   chorus         --> text
-//   comment        --> text
-//   comment_italic --> chord
-//   comment_box    --> chord
-//   annotation     --> chord
-//   toc            --> text
-//   grid           --> chord
-//   grid_margin    --> comment
-//   footer         --> subtitle @ 60%
-//   empty          --> text
-//   diagram        --> comment
-//   diagram_base   --> text (at a small size)
+// Fonts — *** PALETA DE COLORES JPP ***
+// Herencias por defecto:
+//   subtitle, chorus, comment, toc, empty  --> text
+//   comment_italic, comment_box, annotation, grid --> chord
+//   grid_margin  --> comment
+//   footer       --> subtitle @ 60%
+//   diagram      --> comment
+//   diagram_base --> text (small)
 
-// Font for page titles. Default: "serif bold 14"
-# pdf.fonts.title : "serif bold 14"
+// Título de la canción — teal muy oscuro
+pdf.fonts.title.description : "serif bold 14"
+pdf.fonts.title.color : "#0d3540"
 
-// Font for lyrics. Default: "serif 12"
-# pdf.fonts.text : "serif 12"
+// Subtítulo (autor) — gris oscuro
+pdf.fonts.subtitle.description : "serif 12"
+pdf.fonts.subtitle.color : "#444444"
 
-// Font for chord names. Default: "sans italic 10"
-// *** PERSONALIZADO JPP: acordes en rojo ***
-// Para cambiar el tamaño, edita el número al final (ej: "sans italic 12")
+// Letra de la canción — gris medio (prueba)
+pdf.fonts.text.description : "serif 12"
+pdf.fonts.text.color : "#666666"
+
+// Acordes — teal base *** PERSONALIZADO JPP ***
+// Para cambiar el tamaño edita el número al final (ej: "sans italic 12")
 pdf.fonts.chord.description : "sans italic 10"
-pdf.fonts.chord.color : red
+pdf.fonts.chord.color : "#134f5c"
 
-// Finger number color inside chord dots
+// Footer — gris claro
+pdf.fonts.footer.description : "serif 10"
+pdf.fonts.footer.color : "#999999"
+
+// Tabla de contenidos — gris medio
+pdf.fonts.toc.description : "serif 11"
+pdf.fonts.toc.color : "#666666"
+
+// Comentarios — fondo teal muy tenue
+# pdf.fonts.comment : "sans 12; background=foreground-light"
+pdf.fonts.comment.description : "sans 12"
+pdf.fonts.comment.background : "#f0f0f0"
+
+# pdf.fonts.comment_italic : "Helvetica-Oblique 12"
+# pdf.fonts.comment_box : "sans 12; frame=1"
+# pdf.fonts.tab : "mono 10"
+# pdf.fonts.grid : "sans 10"
 # pdf.fonts.chordfingers.numbercolor : background
 
-// Font for comment text. Default: "sans 12" with grey background
-# pdf.fonts.comment : "sans 12; background=foreground-light"
+/**************** A2Crd ****************/
 
-// Font for italic comment text
-# pdf.fonts.comment_italic : "Helvetica-Oblique 12"
-
-// Font for boxed comment text
-# pdf.fonts.comment_box : "sans 12; frame=1"
-
-// Font for tabs
-# pdf.fonts.tab : "mono 10"
-
-// Font for table of contents
-# pdf.fonts.toc : "serif 11"
-
-// Font for grids
-# pdf.fonts.grid : "sans 10"
-
-/**************** Settings for A2Crd (input) frontend ****************/
-
-// Treat leading lyrics lines as title/subtitle lines
 # a2crd.infer-titles : true
-
-// Analysis strategy
 # a2crd.classifier : pct_chords
-
-// Tab stop width for tab expansion. Set to zero to disable.
 # a2crd.tabstop : 8
 
-/**************** Settings for the markup processor ****************/
+/**************** Markup ****************/
 
-// Shortcodes allow user defined markup, e.g. <foo>...</foo>.
-// Example: heavy : "weight='bold' size='large'"
 # markup.shortcodes {}
 
-/**************** Settings for the parser/preprocessor ****************/
+/**************** Parser ****************/
 
-// Replace target strings in selected lines
 # parser.preprocess.all       : []
 # parser.preprocess.directive : []
 # parser.preprocess.songline  : []
-
-// Alternative brackets for lyrics/annotations (use wisely)
 # parser.altbrackets : null
