@@ -1,10 +1,8 @@
 // =============================================================
-// ChordPro — Archivo de configuración personalizado (JPP) — GUITARRA
+// ChordPro — Archivo de configuración personalizado (JPP) — LETRA SOLA
 //
-// Basado en el starter config oficial de ChordPro + documentación completa.
-// Todos los parámetros están presentes con sus valores por defecto.
-// Los que NO se han tocado están comentados con "# ".
-// Los que SÍ están activos son las personalizaciones JPP.
+// Basado en el config de guitarra JPP.
+// Fuentes al doble de tamaño, sin acordes, sin info musical en footer.
 //
 // Paleta de colores JPP (base: #134f5c teal oscuro):
 //   Título      : #0d3540  (teal muy oscuro)
@@ -26,15 +24,16 @@
 
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
-pdf.fonts.title.description    : "serif bold 14"
-pdf.fonts.subtitle.description : "serif 12"
-pdf.fonts.text.description     : "serif 12"
-pdf.fonts.chord.description    : "sans italic 10"
-pdf.fonts.footer.description   : "serif 10"
-pdf.fonts.toc.description      : "serif 11"
-pdf.fonts.comment.description  : "sans 12"
+pdf.fonts.title.description    : "serif bold 20"
+pdf.fonts.subtitle.description : "serif 17"
+pdf.fonts.text.description     : "serif 16"
+pdf.fonts.chord.description    : "sans italic 15"
+pdf.fonts.footer.description   : "serif 12"
+pdf.fonts.toc.description      : "serif 16"
+pdf.fonts.comment.description  : "sans 16"
 
 // Colores
+pdf.fonts.chorus.color   : "#497882"   // texto del coro — mismo tono que acordes en guitarra
 pdf.fonts.title.color    : "#0d3540"
 pdf.fonts.subtitle.color : "#444444"
 pdf.fonts.text.color     : "#666666"
@@ -47,8 +46,8 @@ pdf.fonts.toc.color      : "#666666"
 /**************** Para la GUI ****************/
 
 config.type        : config
-config.title       : "JPP Guitar"
-config.description : "Configuración personalizada JPP para guitarra."
+config.title       : "JPP Lyrics Only"
+config.description : "Letra sola, fuente grande, sin acordes ni info musical en footer."
 
 /**************** General settings ****************/
 
@@ -58,7 +57,7 @@ settings.strict : true
 # settings.columns : 1
 # settings.suppress-empty-chords : true
 # settings.suppress-empty-lyrics : true
-# settings.lyrics-only : false
+settings.lyrics-only : true
 # settings.inline-chords : false
 # settings.inline-annotations : %s
 # settings.chords-under : false
@@ -274,12 +273,12 @@ pdf.diagrams.show : right
 
 // Primera página de cada canción — *** PERSONALIZADO JPP ***
 pdf.formats.title.title    : [ "" "%{title}" "" ]
-pdf.formats.title.subtitle : [ "%{author}" "%{subtitle}" "%{ccli|CCLI: %{}}" ]
-pdf.formats.title.footer   : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+pdf.formats.title.subtitle : [ "" "%{subtitle}" "%{ccli|CCLI: %{}}" ]
+pdf.formats.title.footer   : [ "" "%{author}" "%{page}" ]
 # pdf.formats.title.background : ""
 
 // Primera página del documento
-pdf.formats.first.footer : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+pdf.formats.first.footer : [ "" "%{author}" "%{page}" ]
 # pdf.formats.first.background : ""
 
 # pdf.formats.filler.background : ""
