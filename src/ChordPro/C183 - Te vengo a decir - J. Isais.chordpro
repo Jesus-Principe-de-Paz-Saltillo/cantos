@@ -1,4 +1,5 @@
-{title: C183 - Te vengo a decir - J. Isais}
+{title: C183 - Te vengo a decir}
+{subtitle: J. Isais}
 {author: Juan M. Isais}
 #{ccli: }
 {key: E}
@@ -8,7 +9,7 @@
 # sample:https://youtu.be/LEp7k7VLUFA
 {footer: Transposición sugerida: D}
 
-{c:Verse 1}
+{c:Verso 1}
 {start_of_verse:-}
 //Te vengo a dec[E]ir//, oh mi Salvad[B]or,
 //que yo te amo a ti// con el coraz[E]ón.
@@ -20,7 +21,7 @@ con el coraz[E]ón.
 {end_of_verse}
 
 ///
-{c:Verse 2}
+{c:Verso 2}
 {start_of_verse:-}
 //Yo quiero cant[B]ar// de gozo y de p[E]az.
 //Yo quiero llor[B]ar// de felicid[E]ad.

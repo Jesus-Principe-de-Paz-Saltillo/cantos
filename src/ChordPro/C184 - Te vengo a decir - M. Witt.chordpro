@@ -1,4 +1,5 @@
-{title: C184- Te vengo a decir - M. Witt}
+{title: C184- Te vengo a decir}
+{subtitle: Marcos Witt}
 {author: Juan M. Isais}
 #{ccli: }
 {key: A}
@@ -8,7 +9,7 @@
 # sample:https://youtu.be/43b0IsImnHw
 {footer: Transposición sugerida: D}
 
-{c:Verse 1}
+{c:Verso 1}
 {start_of_verse:-}
 //Te vengo a dec[A]ir//, oh mi Salvad[E]or,
 //que yo te amo a ti// con el coraz[A]ón.
@@ -19,7 +20,7 @@ yo te amo, Señ[A]or, te adoro, Señ[E]or,
 con el coraz[A]ón.
 {end_of_verse}
 
-{c:Chorus}
+{c:Coro}
 {start_of_chorus:-}
 //Yo quiero cant[E]ar// de gozo y de p[A]az.
 //Yo quiero llor[E]ar// de felicid[A]ad.
@@ -30,7 +31,7 @@ yo te amo, Señ[A]or, te adoro, Señ[E]or,
 con el coraz[A]ón.
 {end_of_chorus}
 
-{c:Verse 2}
+{c:Verso 2}
 {start_of_verse:-}
 //Te quiero segu[A]ir//, oh mi Salvad[E]or,
 //y darte mi ser//, mi amigo, mi Di[A]os.
