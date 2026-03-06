@@ -126,6 +126,14 @@ chords: [
   { name : "AmAdd4"  copy : "Am(add4)" }   // variante mayúsculas
   { name : "*"  display : "*"  frets : [] fingers : [] }   // anotación — evita warning de [*]
   {
+    // F#m — notas: F# A C#
+    // str4(G) fret2=A | str3(C) fret1=C# | str2(E) fret2=F# | str1(A) open=A
+    name    : "F#m"
+    base    : 1
+    frets   : [ 2  1  2  0 ]
+    fingers : [ 2  1  3  0 ]
+  }
+  {
     // Dsus2 — notas: D E A
     // Cuerdas:  4    3    2    1
     //           G    C    E    A
@@ -302,19 +310,7 @@ pdf.formats.first.footer : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}
 //   footer       --> subtitle @ 60%
 //   diagram      --> comment
 //   diagram_base --> text (small)
-
-// Título de la canción — teal muy oscuro
-
-// Subtítulo (autor) — gris oscuro
-
-// Letra de la canción — gris medio
-
-// Acordes — teal suave *** PERSONALIZADO JPP ***
-// Para cambiar el tamaño edita el número al final (ej: "sans italic 12")
-
-// Footer — gris claro
-
-// Tabla de contenidos — gris medio
+// Nota: tamaños y colores definidos en la sección AJUSTES RÁPIDOS al inicio
 
 // Comentarios — fondo gris muy tenue
 pdf.fonts.comment.background : "#f0f0f0"
