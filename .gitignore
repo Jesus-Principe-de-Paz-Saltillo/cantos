@@ -92,3 +92,9 @@ Thumbs.db
 
 /src/ChordPro/*.html
 /src/ChordPro/*.txt
+
+# Archivos temporales de Vim
+*.swp
+*.swo
+*.swn
+*~

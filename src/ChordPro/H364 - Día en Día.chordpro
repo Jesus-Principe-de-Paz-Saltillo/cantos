@@ -7,12 +7,14 @@
 {time: 4/4}
 {duration: 2:42}
 # sample:https://youtu.be/7nGf9NAM2kU
-# otros cclis asociados: 5242690, 7204672, 7246038
-{footer: Tono original: Eb | Trad. al español: Roberto C. Savage & Fco. S. Cook | copyright de Singspiration Music (1958) | Texto biblico: Deu 33:25 | Y como tus días serán tus fuerzas. | Celebremos Su Gloria: 368 | Hymn 80 | Hymn 355}
+# otros CCLIs asociados: 5242690, 7204672, 7246038
+{footer: Tono original: Eb | Trad. al español: Roberto C. Savage & Fco. S. Cook}
+{footer_2: copyright de Singspiration Music (1958) | Texto biblico: Deu 33:25 | Y como tus días serán tus fuerzas.}
+{footer_3: Celebremos Su Gloria: 368 | Hymn 80 | Hymn 355}
 
 {c:Verso 1}
 {start_of_verse:-}
-[E]OH mi Dios, yo encuentro cada [F#m]día
+[E]Oh mi Dios, yo encuentro cada [F#m]día
 Tu pod[B]er en todo sin sab[E]or;
 Por la fe en tu Sabidur[F#m]ía
 Libre s[B]oy de pena y tem[E]or.

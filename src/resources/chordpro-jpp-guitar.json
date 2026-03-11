@@ -77,7 +77,7 @@ settings.strict : true
 
 /**************** Metadata ****************/
 
-metadata.keys : [ append author ccli footer key tempo time duration ]
+metadata.keys : [ append author composer lyricist ccli footer footer_2 footer_3 footer_4 key tempo time duration ]
 
 # metadata.strict : true
 # metadata.separator : "; "
@@ -177,11 +177,11 @@ chords: [
 # pdf.columnspace : 20
 
 # pdf.margintop : 80
-# pdf.marginbottom : 40
+pdf.marginbottom : 150
 # pdf.marginleft : 40
 # pdf.marginright : 40
 # pdf.headspace : 60
-# pdf.footspace : 20
+pdf.footspace : 40
 
 # pdf.head-first-only : false
 
@@ -274,12 +274,24 @@ pdf.diagrams.show : right
 
 // Primera página de cada canción — *** PERSONALIZADO JPP ***
 pdf.formats.title.title    : [ "" "%{title}" "" ]
-pdf.formats.title.subtitle : [ "%{author}" "%{subtitle}" "%{ccli|CCLI: %{}}" ]
-pdf.formats.title.footer   : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+pdf.formats.title.subtitle : [ "" "%{author}%{composer|Música: %{}}%{lyricist| · Letra: %{}}%{subtitle| · %{}}%{ccli| · CCLI: %{}}" "" ]
+pdf.formats.title.footer   : [
+  [ "" "%{footer}" "" ]
+  [ "" "%{footer_2}" "" ]
+  [ "" "%{footer_3}" "" ]
+  [ "" "%{footer_4}" "" ]
+  [ "" "%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+]
 # pdf.formats.title.background : ""
 
 // Primera página del documento
-pdf.formats.first.footer : [ "" "%{footer|%{} · }%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+pdf.formats.first.footer : [
+  [ "" "%{footer}" "" ]
+  [ "" "%{footer_2}" "" ]
+  [ "" "%{footer_3}" "" ]
+  [ "" "%{footer_4}" "" ]
+  [ "" "%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
+]
 # pdf.formats.first.background : ""
 
 # pdf.formats.filler.background : ""
