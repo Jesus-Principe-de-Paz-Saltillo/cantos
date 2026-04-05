@@ -25,10 +25,10 @@
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
 
-pdf.fonts.text.description     : "serif 20"
+pdf.fonts.text.description     : "serif 22"
 pdf.fonts.chord.description    : "sans italic 0"
 
-pdf.fonts.title.description    : "serif bold 24"
+pdf.fonts.title.description    : "serif bold 26"
 pdf.fonts.subtitle.description : "serif 12"
 pdf.fonts.footer.description   : "serif 12"
 
@@ -203,7 +203,7 @@ chords: [
 # pdf.columnspace : 20
 
 # pdf.margintop : 80
-pdf.marginbottom : 150
+pdf.marginbottom : 80
 # pdf.marginleft : 40
 # pdf.marginright : 40
 # pdf.headspace : 60

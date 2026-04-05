@@ -24,8 +24,8 @@
 // AJUSTES RÁPIDOS — modifica aquí sin buscar en el resto del archivo
 // =============================================================
 
-// pdf.diagrams.show : right
-pdf.diagrams.show : bottom
+pdf.diagrams.show : right
+// pdf.diagrams.show : bottom
 
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
@@ -33,22 +33,22 @@ pdf.diagrams.show : bottom
 pdf.fonts.text.description     : "serif 16"
 pdf.fonts.chord.description    : "sans italic 12"
 
-pdf.fonts.title.description    : "serif bold 16"
+pdf.fonts.title.description    : "serif bold 17"
 pdf.fonts.subtitle.description : "serif 14"
 pdf.fonts.footer.description   : "serif 12"
 pdf.fonts.toc.description      : "serif 13"
-pdf.fonts.comment.description  : "sans 14"
+pdf.fonts.comment.description  : "sans 11"
 
-settings.columns : 2
+settings.columns : 1
 
 pdf.columnspace : 15
 
 # space after the header section (title, subtitle, etc.) and before the first verse
 # pdf.headspace : 60
 # space after the last verse and before the footer section
-pdf.footspace : 40
+pdf.footspace : 5
 # que tanto levanta el footer (como si fuera un margen inferior extra)
-pdf.marginbottom : 110
+pdf.marginbottom : 40
 # pdf.margintop : 80
 pdf.marginleft : 15
 pdf.marginright : 15
@@ -98,7 +98,7 @@ settings.strict : true
 
 /**************** Metadata ****************/
 
-metadata.keys : [ append author composer lyricist ccli footer footer_2 footer_3 footer_4 key tempo time duration ]
+metadata.keys : [ append author composer lyricist ccli key tempo time duration footer footer_2 footer_3 footer_4 ]
 
 # metadata.strict : true
 # metadata.separator : "; "
@@ -309,21 +309,21 @@ pdf.chorus.indent : 20
 pdf.formats.title.title    : [ "" "%{title}" "" ]
 pdf.formats.title.subtitle : [ "" "%{author}%{composer|Música: %{}}%{lyricist| · Letra: %{}}%{subtitle| · %{}}%{ccli| · CCLI: %{}}" "" ]
 pdf.formats.title.footer   : [
+  [ "" "%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
   [ "" "%{footer}" "" ]
   [ "" "%{footer_2}" "" ]
   [ "" "%{footer_3}" "" ]
   [ "" "%{footer_4}" "" ]
-  [ "" "%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
 ]
 # pdf.formats.title.background : ""
 
 // Primera página del documento
 pdf.formats.first.footer : [
+  [ "" "%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
   [ "" "%{footer}" "" ]
   [ "" "%{footer_2}" "" ]
   [ "" "%{footer_3}" "" ]
   [ "" "%{footer_4}" "" ]
-  [ "" "%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
 ]
 # pdf.formats.first.background : ""
 

@@ -5,42 +5,38 @@
 {tempo: 82}
 {time: 3/4}
 {duration: 3:59}
-# sample:https://youtu.be/mesU4kJLb78
+# sample:https://youtu.be/JGZ6q6lR76Q | https://youtu.be/mesU4kJLb78
 {footer: Tono original: C#}
 
-{c:Verse 1}
+{c:Verso 1}
 {start_of_verse:-}
-El com[G]ercio ya ha cesado , el bull[C]icio termino
-Los tall[A]eres se han cerr[D7]ado, la cos[G]echa se dejo
-En las casas no hay lab[G7]ores, en las c[C]ortes no hay ley
-El plan[D7]eta ya esta listo para r[G]ecibir al rey.
+El com[G]ercio ya ha ces[G7]ado , el bull[C]icio termin[Am]o,
+Los tall[D]eres se han cerr[D7]ado, la cos[G]echa s[(C)]e dej[G]o,
+En las casas no hay lab[G7]ores, en las c[C]ortes no hay l[Am]ey,
+El plan[D]eta ya esta l[D7]isto para r[G]ecib[(C)]ir al R[G]ey.
 {end_of_verse}
 
-
-{c:Chorus}
+{c:Coro}
 {start_of_chorus:-}
+¡Oh el R[G]ey ya v[G7]iene, el R[C]ey ya v[Am]iene!
+Ya son[D]ó la gran tromp[D7]eta y su r[G]ostro v[(C)]eo y[G]a
+¡Oh el Rey ya vi[G7]ene, el R[C]ey ya vi[Am]ene!
+¡Gloria a Di[D]os! ¡Él vi[D7]ene por m[G]í!
 {comment: Se repite al final}
-Oh el R[G]ey ya viene, el R[C]ey ya viene!
-Ya son[D7]ó la gran trompeta, y su r[G]ostro veo ya
-Oh el rey ya vi[G7]ene, el r[C]ey ya vi[A7]ene!
-Gloria a Di[D7]os! El viene por m[G]i!
 {end_of_chorus}
 
-
-{c:Verse 2}
+{c:Verso 2}
 {start_of_verse:-}
-En r[G]ostros sonrientes que con[C]ocen la verdad
-Se ven v[A]idas red[D7]imidas que ya ti[G]enen libertad
-Se ven niños y ancian[G7]itos que sufri[C]eron gran dolor
-Tiene y[D7]a salud y gozo, gracias [G]a su Redentor.
+En r[G]ostros sonri[G7]entes que con[C]ocen la verd[Am]ad
+Se ven v[D]idas red[D7]imidas que ya ti[G]enen l[(C)]ibert[G]ad,
+Se ven niños y ancian[G7]itos que sufri[C]eron gran dol[Am]or;
+Tiene y[D]a salud y g[D7]ozo gracias [G]a su R[(C)]edent[G]or.
 {end_of_verse}
 
-
-{c:Verse 3}
+{c:Verso 3}
 {start_of_verse:-}
-Oigo c[G]arros que retumban porque vi[C]enen a anunciar
-La vict[A]oria de la v[D7]ida y el fin[G]al de la maldad
-Togas reales se rep[G7]arten, la trib[C]una lista esta
-Y el gran c[D7]oro de los cielos canta gr[G]acia amor y paz.
+Oigo c[G]arros que ret[G7]umban porque vi[C]enen a anunci[Am]ar
+La vict[D]oria de la v[D7]ida y el fin[G]al de l[(C)]a mald[G]ad.
+Togas reales se rep[G7]arten, la trib[C]una lista est[Am]a
+Y el gran c[D]oro de los ci[D7]elos canta gr[G]acia am[(C)]or y p[G]az.
 {end_of_verse}
-
