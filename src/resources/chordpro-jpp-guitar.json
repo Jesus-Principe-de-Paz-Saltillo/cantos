@@ -24,34 +24,38 @@
 // AJUSTES RÁPIDOS — modifica aquí sin buscar en el resto del archivo
 // =============================================================
 
-pdf.diagrams.show : right
-// pdf.diagrams.show : bottom
+// pdf.diagrams.show : right
+pdf.diagrams.show : bottom
+
+ pdf.diagrams.align : center
+ pdf.diagrams.hspace : 5
+ pdf.diagrams.vspace : 2
 
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
 
-pdf.fonts.text.description     : "serif 16"
-pdf.fonts.chord.description    : "sans italic 12"
+pdf.fonts.text.description     : "serif 19"
+pdf.fonts.chord.description    : "sans italic 13"
 
-pdf.fonts.title.description    : "serif bold 17"
+pdf.fonts.title.description    : "serif bold 22"
 pdf.fonts.subtitle.description : "serif 14"
 pdf.fonts.footer.description   : "serif 12"
 pdf.fonts.toc.description      : "serif 13"
 pdf.fonts.comment.description  : "sans 11"
 
-settings.columns : 1
+settings.columns : 2
 
 pdf.columnspace : 15
 
 # space after the header section (title, subtitle, etc.) and before the first verse
 # pdf.headspace : 60
 # space after the last verse and before the footer section
-pdf.footspace : 5
+pdf.footspace : 20
 # que tanto levanta el footer (como si fuera un margen inferior extra)
-pdf.marginbottom : 40
+pdf.marginbottom : 60
 # pdf.margintop : 80
-pdf.marginleft : 15
-pdf.marginright : 15
+pdf.marginleft : 20
+pdf.marginright : 30
 
 # pdf.head-first-only : false
 
@@ -249,14 +253,11 @@ pdf.chorus.indent : 20
 # pdf.titles-directive-ignore : false
 
 // Chord diagrams for string instruments
-# pdf.diagrams.align : left
 # pdf.diagrams.width : 6
 # pdf.diagrams.height : 6
 # pdf.diagrams.vcells : 4
 # pdf.diagrams.linewidth : 0.1
 # pdf.diagrams.nutwidth : 5
-# pdf.diagrams.hspace : 3.95
-# pdf.diagrams.vspace : 3
 # pdf.diagrams.dotsize : 0.8
 # pdf.diagrams.barstyle : line
 # pdf.diagrams.barwidth : 0.8
