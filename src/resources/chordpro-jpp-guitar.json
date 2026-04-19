@@ -34,7 +34,7 @@ pdf.diagrams.show : bottom
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
 
-pdf.fonts.text.description     : "serif 19"
+pdf.fonts.text.description     : "serif 17"
 pdf.fonts.chord.description    : "sans italic 13"
 
 pdf.fonts.title.description    : "serif bold 22"
@@ -45,12 +45,12 @@ pdf.fonts.comment.description  : "sans 11"
 
 settings.columns : 2
 
-pdf.columnspace : 15
+pdf.columnspace : 5
 
 # space after the header section (title, subtitle, etc.) and before the first verse
 # pdf.headspace : 60
 # space after the last verse and before the footer section
-pdf.footspace : 20
+pdf.footspace : 30
 # que tanto levanta el footer (como si fuera un margen inferior extra)
 pdf.marginbottom : 60
 # pdf.margintop : 80
