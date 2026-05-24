@@ -23,8 +23,8 @@
 // AJUSTES RÁPIDOS — modifica aquí sin buscar en el resto del archivo
 // =============================================================
 
-// pdf.diagrams.show : right
-pdf.diagrams.show : bottom
+pdf.diagrams.show : right
+// pdf.diagrams.show : bottom
 
  pdf.diagrams.align : center
  pdf.diagrams.hspace : 5
@@ -32,19 +32,18 @@ pdf.diagrams.show : bottom
 
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
-pdf.fonts.text.description     : "serif 17"
-pdf.fonts.chord.description    : "sans italic 13"
+pdf.fonts.text.description     : "serif 21"
+pdf.fonts.chord.description    : "sans italic 18"
 
-pdf.fonts.title.description    : "serif bold 18"
-pdf.fonts.subtitle.description : "serif 14"
+pdf.fonts.title.description    : "serif bold 21"
+pdf.fonts.subtitle.description : "serif 17"
 pdf.fonts.footer.description   : "serif 12"
 pdf.fonts.toc.description      : "serif 13"
-pdf.fonts.comment.description  : "sans 11"
+pdf.fonts.comment.description  : "sans 13"
 
+settings.columns : 1
 
-settings.columns : 2
-
-pdf.columnspace : 15
+pdf.columnspace : 2
 
 # space after the header section (title, subtitle, etc.) and before the first verse
 # pdf.headspace : 60
@@ -53,8 +52,8 @@ pdf.footspace : 20
 # que tanto levanta el footer (como si fuera un margen inferior extra)
 pdf.marginbottom : 60
 # pdf.margintop : 80
-pdf.marginleft : 40
-pdf.marginright : 40
+pdf.marginleft : 20
+pdf.marginright : 30
 
 # pdf.head-first-only : false
 
@@ -314,7 +313,7 @@ pdf.chorus.indent : 20
 # pdf.formats.default.background : ""
 
 pdf.formats.title.title    : [ "" "%{title}" "" ]
-pdf.formats.title.subtitle : [ "" "%{author}%{composer|Música: %{}}%{lyricist| · Letra: %{}}%{subtitle| · %{}}%{ccli| · CCLI: %{}}" "" ]
+pdf.formats.title.subtitle : [ "" "%{author}%{composer|Música: %{}}%{lyricist| · Letra: %{}}%{subtitle| · %{}}%{ccli| · CCLI: %{}} %{capo| · <span foreground=\"#9E3D3D\">Capo: %{}</span>}" ""]
 pdf.formats.title.footer   : [
   [ "" "%{key|%{}}%{tempo| · %{} bpm}%{time| · %{}}%{duration| · %{}}" "%{page}" ]
   [ "" "%{footer}" "" ]
