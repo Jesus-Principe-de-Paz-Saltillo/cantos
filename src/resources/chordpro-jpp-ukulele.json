@@ -23,6 +23,8 @@
 // AJUSTES RÁPIDOS — modifica aquí sin buscar en el resto del archivo
 // =============================================================
 
+pdf.capoheading : "%{capo|Capo: %{}}"
+
 pdf.diagrams.show : right
 // pdf.diagrams.show : bottom
 
@@ -32,8 +34,13 @@ pdf.diagrams.show : right
 
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
+<<<<<<< H522
+pdf.fonts.text.description     : "serif 15"
+pdf.fonts.chord.description    : "sans italic 12"
+=======
 pdf.fonts.text.description     : "serif 21"
 pdf.fonts.chord.description    : "sans italic 18"
+>>>>>>> main
 
 pdf.fonts.title.description    : "serif bold 21"
 pdf.fonts.subtitle.description : "serif 17"
@@ -260,7 +267,6 @@ pdf.chorus.indent : 20
 # pdf.labels.comment : ""
 
 # pdf.chordscolumn : 0
-# pdf.capoheading : "%{capo|Capo: %{}}"
 # pdf.titles-directive-ignore : false
 
 // Diagramas — ukulele tiene 4 cuerdas, el ancho se ajusta automáticamente
