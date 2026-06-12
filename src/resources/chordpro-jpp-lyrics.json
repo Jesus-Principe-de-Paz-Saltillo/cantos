@@ -25,7 +25,7 @@
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
 
-pdf.fonts.text.description     : "serif 22"
+pdf.fonts.text.description     : "serif 23"
 pdf.fonts.chord.description    : "sans italic 0"
 
 pdf.fonts.title.description    : "serif bold 26"
