@@ -1,8 +1,9 @@
 {title: H522 - Usa Mi Vida}
 {author: Ira Bishop Wilson & George Stark Schuler}
 # {ccli: }
-{key: ?}
+{key: C}
 {tempo: 54}
+{capo: 2}
 {time: 4/4}
 {duration: 4:39}
 # sample: https://youtu.be/nETpvhKaafA
@@ -11,7 +12,7 @@
 {c:Verso 1}
 {start_of_verse:-}
 M[C]uchos que viven en t[G7]u derred[C]or
-Tr[F]istes, hambri[F]entos est[C]án
+Tr[F]istes, hambri[F]entos est[(G)][(C)]án
 T[Am]ú por tu v[E]ida les p[F]uedes llev[C]ar
 G[G]ozo, luz [D7]y bienest[G]ar.  [C]  [G7]
 {end_of_verse}
@@ -19,17 +20,17 @@ G[G]ozo, luz [D7]y bienest[G]ar.  [C]  [G7]
 
 {c:Coro}
 {start_of_chorus:-}
-[C]Us[(A)]a mi v[Dm]ida, [G7]usa mi v[C]ida
+[C]Us[(A)]a mi v[Dm]ida, us[G7]a mi v[C]ida
 P[F]ara tu gl[C]oria [D7]oh Jes[G7]ús
-T[C]od[A]os los d[Dm]ías y h[G7]oy q[C]uiero s[E]er
-T[Dm]est[A]igo t[Dm]uyo, Señ[C]or p[Em]or d[G7]oq[C]uier
+T[C]od[A]os los d[Dm]í[(G)]as y h[G7]oy q[C]uiero s[E]er
+T[Dm]est[A]igo t[Dm]uyo, Señ[C]or p[(Em)]or d[G7]oq[C]uier
 {end_of_chorus}
 
 
 {c:Verso 2}
 {start_of_verse:-}
 D[C]í a los tristes que Di[G7]os es am[C]or
-[F]El quiere d[F]arles perd[C]ón
+[F]El quiere d[F]arles perd[(G)][(C)]ón
 [Am]A los que vi[E]enen a Cr[F]isto Jes[C]ús
 B[G]uscando p[D7]az, salvaci[G]ón  [C]  [G7]
 {end_of_verse}
@@ -38,7 +39,7 @@ B[G]uscando p[D7]az, salvaci[G]ón  [C]  [G7]
 {c:Verso 3}
 {start_of_verse:-}
 T[C]oda tu vida hoy r[G7]inde al Señ[C]or
-C[F]ada mom[F]ento sé fi[C]el
+C[F]ada mom[F]ento sé fi[(G)][(C)]el
 [Am]Otros que v[E]ean en t[F]i su am[C]or
 Pr[G]onto se r[G7]indan a [G]El  [C]  [G7]
 {end_of_verse}
