@@ -1,45 +1,45 @@
 {title: H522 - Usa Mi Vida}
 {author: Ira Bishop Wilson & George Stark Schuler}
 # {ccli: }
-{key: C}
+{key: G}
 {tempo: 54}
 {capo: 2}
 {time: 4/4}
 {duration: 4:39}
 # sample: https://youtu.be/nETpvhKaafA
-{footer: Tono Original: C}
+{footer: Tono Original: C | Tono final con capo: A}
 
 {c:Verso 1}
 {start_of_verse:-}
-M[C]uchos que viven en t[G7]u derred[C]or
-Tr[F]istes, hambri[F]entos est[(G)][(C)]án
-T[Am]ú por tu v[E]ida les p[F]uedes llev[C]ar
-G[G]ozo, luz [D7]y bienest[G]ar.  [C]  [G7]
+M[G]uchos que viven en t[D7]u derred[G]or
+Tr[C]istes, hambri[C]entos est[(D)][(G)]án
+T[Em]ú por tu v[B]ida les p[C]uedes llev[G]ar
+G[D]ozo, luz [A7]y bienest[D]ar.  [G]  [D7]
 {end_of_verse}
 
 
 {c:Coro}
 {start_of_chorus:-}
-[C]Us[(A)]a mi v[Dm]ida, us[G7]a mi v[C]ida
-P[F]ara tu gl[C]oria [D7]oh Jes[G7]ús
-T[C]od[A]os los d[Dm]í[(G)]as y h[G7]oy q[C]uiero s[E]er
-T[Dm]est[A]igo t[Dm]uyo, Señ[C]or p[(Em)]or d[G7]oq[C]uier
+[G]Us[(E)]a mi v[Am]ida, us[D7]a mi v[G]ida
+P[C]ara tu gl[G]oria [A7]oh Jes[D7]ús
+T[G]od[E]os los d[Am]í[(D)]as y h[D7]oy q[G]uiero s[B]er
+T[Am]est[E]igo t[Am]uyo, Señ[G]or p[(Bm)]or d[D7]oq[G]uier
 {end_of_chorus}
 
 
 {c:Verso 2}
 {start_of_verse:-}
-D[C]í a los tristes que Di[G7]os es am[C]or
-[F]El quiere d[F]arles perd[(G)][(C)]ón
-[Am]A los que vi[E]enen a Cr[F]isto Jes[C]ús
-B[G]uscando p[D7]az, salvaci[G]ón  [C]  [G7]
+D[G]í a los tristes que Di[D7]os es am[G]or
+[C]El quiere d[C]arles perd[(D)][(G)]ón
+[Em]A los que vi[B]enen a Cr[C]isto Jes[G]ús
+B[D]uscando p[A7]az, salvaci[D]ón  [G]  [D7]
 {end_of_verse}
 
 
 {c:Verso 3}
 {start_of_verse:-}
-T[C]oda tu vida hoy r[G7]inde al Señ[C]or
-C[F]ada mom[F]ento sé fi[(G)][(C)]el
-[Am]Otros que v[E]ean en t[F]i su am[C]or
-Pr[G]onto se r[G7]indan a [G]El  [C]  [G7]
+T[G]oda tu vida hoy r[D7]inde al Señ[G]or
+C[C]ada mom[C]ento sé fi[(D)][(G)]el
+[Em]Otros que v[B]ean en t[C]i su am[G]or
+Pr[D]onto se r[D7]indan a [D]El  [G]  [D7]
 {end_of_verse}

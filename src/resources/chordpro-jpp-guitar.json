@@ -32,14 +32,14 @@ pdf.marginright : 30
 
 // Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
 // para escalar uniformemente
-pdf.fonts.text.description     : "serif 17"
-pdf.fonts.chord.description    : "sans italic 13"
+pdf.fonts.text.description     : "serif 16"
+pdf.fonts.chord.description    : "sans italic 12"
 
 pdf.fonts.title.description    : "serif bold 21"
 pdf.fonts.subtitle.description : "serif 15"
 pdf.fonts.footer.description   : "serif 12"
-pdf.fonts.toc.description      : "serif 13"
-pdf.fonts.comment.description  : "sans 13"
+pdf.fonts.toc.description      : "serif 12"
+pdf.fonts.comment.description  : "sans 12"
 
  pdf.diagrams.align : center
  pdf.diagrams.hspace : 5
