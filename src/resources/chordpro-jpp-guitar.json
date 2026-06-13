@@ -27,24 +27,26 @@
 pdf.diagrams.show : right
 // pdf.diagrams.show : bottom
 
+settings.columns : 1
+pdf.marginright : 30
+
+// Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
+// para escalar uniformemente
+pdf.fonts.text.description     : "serif 16"
+pdf.fonts.chord.description    : "sans italic 12"
+
+pdf.fonts.title.description    : "serif bold 21"
+pdf.fonts.subtitle.description : "serif 15"
+pdf.fonts.footer.description   : "serif 12"
+pdf.fonts.toc.description      : "serif 12"
+pdf.fonts.comment.description  : "sans 12"
+
  pdf.diagrams.align : center
  pdf.diagrams.hspace : 5
  pdf.diagrams.vspace : 2
 
-// Tamaños de fuente (en puntos) — sube/baja todos en la misma cantidad
-// para escalar uniformemente
-pdf.fonts.text.description     : "serif 21"
-pdf.fonts.chord.description    : "sans italic 17"
-
-pdf.fonts.title.description    : "serif bold 21"
-pdf.fonts.subtitle.description : "serif 17"
-pdf.fonts.footer.description   : "serif 12"
-pdf.fonts.toc.description      : "serif 13"
-pdf.fonts.comment.description  : "sans 13"
-
-settings.columns : 1
-
 pdf.columnspace : 2
+
 
 # space after the header section (title, subtitle, etc.) and before the first verse
 # pdf.headspace : 60
@@ -54,7 +56,6 @@ pdf.footspace : 20
 pdf.marginbottom : 60
 # pdf.margintop : 80
 pdf.marginleft : 20
-pdf.marginright : 30
 
 # pdf.head-first-only : false
 
